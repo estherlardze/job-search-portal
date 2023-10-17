@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import {logo, hand, flag} from '../assets/index'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav>
+        <div>
+          
+        </div>
+        <div>
+
+        </div>
+    </nav>
   )
 }
 
