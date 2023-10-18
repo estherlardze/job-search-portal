@@ -2,7 +2,10 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Hero from '../../components/Hero/Hero'
 import Achievement from '../../components/Achievement'
-import Categories from '../../components/JobCategories/Categories'
+import Categories from '../../components/Categories/Categories'
+import Jobs from '../../components/FeaturesJobs/Jobs'
+import About from '../../components/Aboutsection/About'
+import Testimonial from '../../components/Testimonial/Testimonial'
 
 const Home = () => {
   return (
@@ -11,6 +14,9 @@ const Home = () => {
       <Hero/>
       <Achievement/>
       <Categories/>
+      <Jobs/>
+      <About/>
+      <Testimonial/>
     </div>
   )
 }

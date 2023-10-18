@@ -13,10 +13,24 @@ export default {
         gradient: '#FF9680-#FCAC11'
       },
       backgroundImage: {
-        "hero" : "url('/src/assets/images/hero-bg.jpg')"
+        "hero" : "url('/src/assets/images/hero-bg.jpg')",
+        "client" : "url('/src/assets/images/about-bg.jpg')"
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function({addUtilities}){
+      const newUtilities = {
+        ".no-scrollbar::-webkit-scrollbar" :{
+          display: "none",
+        },
+        ".no-scrollbar" :{
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
+      },
+    };
+    addUtilities(newUtilities)
+  }
+  ],
 }
 
