@@ -8,11 +8,16 @@ import {FaLinkedinIn} from 'react-icons/fa'
 import Catdropdown from './Catdropdown';
 import PagesDropdown from './PagesDropdown';
 
-const smallscreen = "gap-6 justify-start flex flex-col lg:hidden bg-white z-20 h-[100vh] w-[300px] absolute left-0 top-0 px-4 py-4 transition-transform duration-300 ease-in-out"
+const smallscreen = "gap-6 justify-start flex flex-col lg:hidden bg-white z-20 h-[100vh] w-[200px] sm:w-[300px] absolute left-0 top-0 px-4 py-4 transition-transform duration-300 ease-in-out"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [pageOpen, setPageOpen] = useState(false);
   const [menu, setMenu] = useState(false);
+  const [option, setOption] = useState('english')
+
+  const handleSelect = (e) => {
+   setOption(e.target.value)
+  }
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -46,7 +51,11 @@ const Navbar = () => {
            </div>
            <div className='flex gap-2'>
              <img src={flag} alt="flag" />
-             <p>English</p>
+             <select value={option} onChange={handleSelect} className='text-white border-0 outline-none bg-transparent'>
+              <option value="english" className='text-black font-semibold'>English</option>
+              <option value="french" className='text-black font-semibold'>French</option>
+              <option value="spanish" className='text-black font-semibold'>Spanish</option>
+             </select>
            </div>
          </div>
       </article>
@@ -64,11 +73,11 @@ const Navbar = () => {
          </div>
 
         <div className='gap-6 items-center hidden lg:flex'>
-          <Link to='/' className='font-semibold'>Home</Link>
-          <Link to='/about' className='font-semibold'>About</Link>
-          <Link to='/blog' className='font-semibold'>Blog</Link>
+          <Link to='/' className='font-semibold hover:text-blue'>Home</Link>
+          <Link to='/about' className='font-semibold hover:text-blue'>About</Link>
+          <Link to='/blog' className='font-semibold hover:text-blue'>Blog</Link>
           <div  onClick={togglePages}>
-            <div className='flex cursor-pointer'>
+            <div className='flex cursor-pointer hover:text-blue'>
               <span className='font-semibold'>
                Pages
               </span>
@@ -77,7 +86,7 @@ const Navbar = () => {
             <PagesDropdown pageOpen={pageOpen}/>
           </div>
 
-         <Link to='/contact' className='font-semibold'>Contact </Link>
+         <Link to='/contact' className='font-semibold hover:text-blue'>Contact </Link>
           <div className='flex gap-4'>
             <button className='font-semibold text-blue hover:text-white border hover:bg-blue rounded-3xl border-blue py-2 px-3 transition-all ease-in-out duration-500'>
               Login/Register
@@ -122,9 +131,13 @@ const Navbar = () => {
        <p className='flex gap-2'><AiFillFacebook size={24}/> 20k followers</p>
        <p className='flex gap-2'><IoCall size={22}/> +00 123 456 789</p>
       </div>
-      <div className='flex gap-2 text-lg font-semibold text-black/75 mt-4'>
-        <img src={flag} alt="flag" className='w-[30px]'/>
-        <p>English</p>
+      <div className='flex gap-2'>
+        <img src={flag} alt="flag" />
+        <select value={option} onChange={handleSelect} className='text-black text-lg font-semibold border-0 outline-none bg-transparent'>
+        <option value="english" className='text-sm'>English</option>
+        <option value="french" className='text-sm'>French</option>
+        <option value="spanish" className='text-sm'>Spanish</option>
+        </select>
       </div>
    </div> 
      )}

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import Footer from './Footer'
+import Footer from './Footer/Footer'
 import {error} from '../../src/assets/index'
 import { Link } from 'react-router-dom'
 

@@ -12,6 +12,9 @@ export default {
         blue: '#0071DC',
         gradient: '#FF9680-#FCAC11'
       },
+      backgroundImage: {
+        "hero" : "url('/src/assets/images/hero-bg.jpg')"
+      }
     },
   },
   plugins: [],
