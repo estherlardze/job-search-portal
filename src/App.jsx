@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './index.css'
 import { About, Blog, BlogDetail, Contact, Home, Jobs, JobCategorie, JobDetail, JobPost, SignUp } from './Pages/index'
 import Error from './components/Error'
+import StyleGuide from './components/StlyleGuide'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
          <Route path='/post' element={<JobPost/>} />
          <Route path='/jobs/:id' element={<JobDetail/>} />
          <Route path='/signup' element={<SignUp/>} />
+         <Route path='/styles' element={<StyleGuide/>} />
          <Route path='*' element={<Error/>} />
       </Routes>    
     </Router>
