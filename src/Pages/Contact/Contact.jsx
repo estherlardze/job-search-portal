@@ -1,11 +1,12 @@
-import React from 'react'
+import { AccordionSection } from '../../components/Accordion';
+import { GetInTouch } from './constant';
 
 const Contact = () => {
   return (
     <div>
-     Contact
+      <AccordionSection title="Get in touch with us" items={GetInTouch} />
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
