@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar, Hero, Achievement, Categories, Jobs,
-   About, Testimonial, Benefit, Download}
+   About, Testimonial, Benefit, Download, Blogs, Footer}
     from '../../components/index'
 
 
@@ -11,11 +11,13 @@ const Home = () => {
       <Hero/>
       <Achievement/>
       <Categories/>
-      <Jobs/>
+      {/*<Jobs/>*/}
       <About/>
       <Testimonial/>
       <Benefit/>
       <Download/>
+      {/*<Blogs/>*/}
+      <Footer/>
     </div>
   )
 }
