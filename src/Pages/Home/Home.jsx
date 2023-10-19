@@ -1,11 +1,8 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import Hero from '../../components/Hero/Hero'
-import Achievement from '../../components/Achievement'
-import Categories from '../../components/Categories/Categories'
-import Jobs from '../../components/FeaturesJobs/Jobs'
-import About from '../../components/Aboutsection/About'
-import Testimonial from '../../components/Testimonial/Testimonial'
+import {Navbar, Hero, Achievement, Categories, Jobs,
+   About, Testimonial, Benefit, Download}
+    from '../../components/index'
+
 
 const Home = () => {
   return (
@@ -17,6 +14,8 @@ const Home = () => {
       <Jobs/>
       <About/>
       <Testimonial/>
+      <Benefit/>
+      <Download/>
     </div>
   )
 }

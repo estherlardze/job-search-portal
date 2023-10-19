@@ -14,7 +14,8 @@ export default {
       },
       backgroundImage: {
         "hero" : "url('/src/assets/images/hero-bg.jpg')",
-        "client" : "url('/src/assets/images/about-bg.jpg')"
+        "client" : "url('/src/assets/images/about-bg.jpg')",
+        "download" : "url('/src/assets/images/phones.jpg')",
       }
     },
   },

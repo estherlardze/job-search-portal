@@ -6,6 +6,7 @@ export {default as account} from './images/account.svg';
 export {default as aijob} from './images/ai.svg';
 export {default as art} from './images/art.svg';
 export {default as article} from './images/article.jpg';
+export {default as appstore} from './images/appstore.png';
 export {default as blog1} from './images/blog1.jpg';
 export {default as blog2} from './images/blog2.jpg';
 export {default as blog3} from './images/blog3.jpg';
