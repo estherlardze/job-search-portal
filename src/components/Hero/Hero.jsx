@@ -17,7 +17,7 @@ const handleSearch = (e) => {
   return (
     <div className='bg-hero bg-no-repeat bg-cover bg-center h-[100vh] w-[100vw]'>
       <div className='w-[100%] overflow-x-hidden bg-black/20 h-[100vh]'>
-        <header className='flex flex-col w-[94%] mx-[3%] md:w-[80%] md:mx-[10%] pt-[130px] 2xl:w-[60%] 2xl:mx-[20%] 2xl:items-center 2xl:justify-center 2xl:mt-[5%]'>
+        <header className='flex flex-col w-[94%] mx-[3%] md:w-[80%] md:mx-[10%] pt-[50px] lg:pt-[130px] 2xl:w-[60%] 2xl:mx-[20%] 2xl:items-center 2xl:justify-center 2xl:mt-[5%]'>
          <div className='flex gap-3'>
           <hr className='border border-blue w-[70px] mt-4'/>
           <h1 className='text-blue font-semibold 2xl:text-4xl'>NO LONGER LOOKING FOR JOB</h1>

@@ -106,7 +106,7 @@ const Navbar = () => {
       <div className={smallscreen}>
       <Link to='/' className='font-semibold'>Home</Link>
       <Link to='/about' className='font-semibold'>About</Link>
-      <Link to='/blog' className='font-semibold'>Blog</Link>
+      <Link to='/blogs' className='font-semibold'>Blog</Link>
       <div  onClick={togglePages}>
         <div className='flex cursor-pointer justify-between'>
           <span className='font-semibold'>

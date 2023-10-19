@@ -13,7 +13,7 @@ const Benefit = () => {
      <div>
       <div className='flex gap-1'>
        <hr className='border border-blue w-[50px] mt-4'/>
-       <h1 className='text-blue font-semibold text-xl 2xl:text-4xl'>About us</h1>
+       <h1 className='text-blue font-semibold text-xl 2xl:text-4xl'>OUR BENEFITS</h1>
       </div>
       <h1 className='my-8 text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-semibold leading-20 text-black/80'>
         The ultimate platform For job seekers.

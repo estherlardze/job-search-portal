@@ -12,13 +12,13 @@ function App() {
       <Routes>
          <Route path='/' element={<Home/>} />
          <Route path='/about' element={<About/>} />
-         <Route path='/blog' element={<Blog/>} />
+         <Route path='/blogs' element={<Blog/>} />
          <Route path='/blog/:id' element={<BlogDetail/>} />
          <Route path='/contact' element={<Contact/>} />
          <Route path='/jobs' element={<Jobs/>} />
          <Route path='/jobs/:categorie' element={<JobCategorie/>} />
          <Route path='/post' element={<JobPost/>} />
-         <Route path='/jobs/:id' element={<JobDetail/>} />
+         <Route path='/job/:id' element={<JobDetail/>} />
          <Route path='/signup' element={<SignUp/>} />
          <Route path='/styles' element={<StyleGuide/>} />
          <Route path='*' element={<Error/>} />
