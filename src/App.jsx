@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './index.css'
-import { About, Blog, BlogDetail, Contact, Home, Jobs, JobCategorie, JobDetail, JobPost, SignUp } from './Pages/index'
+import { About, Blog, BlogDetail, Contact, Home, Jobs, JobCategorie, JobDetail, JobPost, SignUp, ArtAndDesign } from './Pages/index'
 import Error from './components/Error'
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
          <Route path='/contact' element={<Contact/>} />
          <Route path='/jobs' element={<Jobs/>} />
          <Route path='/jobs/categorie' element={<JobCategorie/>} />
+         <Route path='/jobs/categorie/artsanddesid' element={<ArtAndDesign />} />
          <Route path='/post' element={<JobPost/>} />
          <Route path='/jobs/:id' element={<JobDetail/>} />
          <Route path='/signup' element={<SignUp/>} />
