@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className='mt-[50px] w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%]'>
       <section className='grid grid-cols-10 mb-8 gap-12 xl:gap-8'>
-         <article className='col-span-10 sm:col-span-6 md:col-span-5 xl:col-span-3'>
+         <article className='col-span-8 sm:col-span-6 md:col-span-5 xl:col-span-3'>
          <img src={logo} alt="logo" className='w-[100px] sm:w-[180px]'/>
           <p className='font-semibold text-lg text-gray my-6'>
             It is a long esta fact that a reader wil dist by the real cont of a page when
@@ -72,7 +72,7 @@ const Footer = () => {
            </Link>
          </article>
 
-         <article className='col-span-10 sm:col-span-6 md:col-span-5 xl:col-span-3'>
+         <article className='col-span-8 sm:col-span-6 md:col-span-5 xl:col-span-3'>
            <h3 className='text-xl font-bold'>Contact Info</h3>
            <p className='font-semibold my-1 text-lg text-gray'>Phone:+00 123 456 789</p>
            <p className='font-semibold my-1 text-lg text-gray'>Emaildemomail@gmail.com</p>

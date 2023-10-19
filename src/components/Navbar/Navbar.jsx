@@ -91,9 +91,11 @@ const Navbar = () => {
             <button className='font-semibold text-blue hover:text-white border hover:bg-blue rounded-3xl border-blue py-2 px-3 transition-all ease-in-out duration-500'>
               Login/Register
             </button>
+            <Link to='/post'>
             <button className='font-semibold text-white bg-blue hover:bg-black rounded-3xl py-2 px-3 transition-all ease-in-out duration-500'>
               Job Post
             </button>
+            </Link>
          </div>  
        </div> 
 
@@ -122,9 +124,11 @@ const Navbar = () => {
         <button className='font-semibold text-blue hover:text-white border hover:bg-blue rounded-3xl border-blue py-2 px-3 transition-all ease-in-out duration-500 w-fit'>
           Login/Register
         </button>
+        <Link to='/post'>
         <button className='font-semibold text-white bg-blue hover:bg-black rounded-3xl py-2 px-3 transition-all ease-in-out duration-500 w-fit'>
           Job Post
         </button>
+        </Link>
      </div>  
      <div className='flex gap-4 flex-col font-semibold text-black/75 text-lg mt-8'>
        <p className='flex gap-2'><AiOutlineInstagram size={25}/> 20k followers</p>

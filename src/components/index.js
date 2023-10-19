@@ -9,4 +9,8 @@ export {default as Benefit} from './Benefits/Benefit';
 export {default as Download} from './Download';
 export {default as Blogs } from './Blogsection/Blogs';
 export {default as Footer} from './Footer/Footer';
+export {default as Post} from './PostJob/Post';
+export {default as Details} from './PostJob/Details';
+
+
 
