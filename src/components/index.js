@@ -5,6 +5,8 @@ export {default as Achievement} from './Achievement';
 export {default as Categories} from './Categories/Categories';
 export {default as Jobs} from './FeaturesJobs/Jobs';
 export {default as FindJob} from './Jobs/FindJob';
+export {default as JobsCardOne} from './Jobs/JobsCardOne';
+export {default as JobsCardTwo} from './Jobs/JobsCardTwo';
 export {default as Testimonial} from './Testimonial/Testimonial';
 export {default as Benefit} from './Benefits/Benefit';
 export {default as Download} from './Download';
