@@ -1,14 +1,20 @@
-import { ContactUs, Download, FaQues, GetInTouchWithUs, Navbar } from '../../components';
+import {
+  ContactUs,
+  FaQues,
+  Footer,
+  GetInTouchWithUs,
+  Navbar,
+} from '../../components';
 const Contact = () => {
   return (
     <>
       <div>
         <Navbar />
-        <div className="mt-[-8rem] bg-slate-200">
+        <div className="mb-[-2rem] bg-slate-200">
           <ContactUs />
           <GetInTouchWithUs />
           <FaQues />
-          <Download />
+          <Footer />
         </div>
       </div>
     </>

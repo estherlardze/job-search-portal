@@ -41,7 +41,7 @@ function AccordionItem({ title, content, isOpen, onClick }) {
               </p>
             </div>
           ) : (
-            <p>{content}</p>
+            <p className="w-full lg:w-1/2">{content}</p>
           )}
         </div>
       )}
