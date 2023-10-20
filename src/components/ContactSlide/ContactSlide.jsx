@@ -35,11 +35,11 @@ const ContactSlide = () => {
   return (
     <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={10}
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
@@ -48,7 +48,7 @@ const ContactSlide = () => {
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 50,
           },
         }}
         className="mySwiper"
@@ -56,20 +56,16 @@ const ContactSlide = () => {
         {reviews.map((review) => (
           <SwiperSlide
             key={review.id}
-            className="rounded border-white bg-white  p-8 lg:p-0"
+            className="rounded border border-[#006B6A] p-8"
           >
-            <div className="inline-flex flex-col items-center lg:flex-row">
-              <div className="flex h-[13vh] w-[13vw] items-center justify-center gap-4 rounded-lg bg-slate-200 lg:mr-4 lg:w-[9vw]">
-                <img src={review.Avatar} alt="" className="h-12 " />
+            <div>
+              <div className="flex items-center gap-4">
+                <img src={review.Avatar} alt="" className="h-10" />
               </div>
-              <div className="lg:flex-col">
-                <h1 className="pt-4 text-[1.5rem] font-bold lg:w-10/12">
-                  {review.name}
-                </h1>
-                <p className="my-5 w-full font-semibold text-blue">
-                  {review.comment}
-                </p>
-              </div>
+              <h1 className="pt-4 font-['Sora'] text-[1.5rem]">
+                {review.name}
+              </h1>
+              <p className="my-5">{review.comment}</p>
             </div>
           </SwiperSlide>
         ))}

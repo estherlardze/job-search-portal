@@ -45,11 +45,13 @@ const Testimonial = () => {
        </div>
 
        <div className='flex mt-8 justify-center gap-3 items-center'>
-         <div  className={`${transition} bg-blue p-4 rounded-full hover:bg-black text-white cursor-pointer`}>
-           <GoArrowLeft size={23} onClick={()=> scroll("left")}/>
+         <div  onClick={()=> scroll("left")}
+          className={`${transition} bg-blue p-4 rounded-full hover:bg-black text-white cursor-pointer`}>
+           <GoArrowLeft size={23} />
          </div>
-         <div  className={`${transition} bg-blue p-4 rounded-full hover:bg-black text-white cursor-pointer`}>
-          <GoArrowRight size={23} onClick={()=> scroll("right")}/>
+         <div  size={23} onClick={()=> scroll("right")}
+          className={`${transition} bg-blue p-4 rounded-full hover:bg-black text-white cursor-pointer`}>
+          <GoArrowRight />
          </div>
       </div>
     </section>

@@ -1,19 +1,11 @@
 import { useState } from 'react';
 function AccordionItem({ title, content, isOpen, onClick }) {
   return (
-    <div
-      className={`mb-8 ${
-        title.heading ? 'border-b-[2px]' : 'mx-4 rounded-lg border-[2px]'
-      } border-slate-200 text-justify`}
-    >
+    <div className={`mb-8 border-b-[2px] border-slate-200 text-justify`}>
       <div className="cursor-pointer" onClick={onClick}>
-        <div
-          className={`mb-8 flex justify-between ${
-            title.heading ? '' : 'mb-[-1rem] pb-8 pt-5'
-          } `}
-        >
+        <div className="mb-8 flex justify-between ">
           <div>
-            <div className="text-xl   font-medium">
+            <div className="text-xl font-medium">
               {title.heading ? (
                 <span className="text-blue">{title.heading}</span>
               ) : (
@@ -49,9 +41,7 @@ function AccordionItem({ title, content, isOpen, onClick }) {
               </p>
             </div>
           ) : (
-            <p className="w-full font-semibold text-gray lg:w-11/12">
-              {content}
-            </p>
+            <p className="w-full lg:w-1/2">{content}</p>
           )}
         </div>
       )}

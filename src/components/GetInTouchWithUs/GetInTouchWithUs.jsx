@@ -4,7 +4,7 @@ import { GetInTouch } from '../../Pages/Contact/constant';
 
 const GetInTouchWithUs = () => {
   return (
-    <div className="flex flex-col gap-24 pb-8  bg-white px-4 pt-12 lg:flex-row lg:px-32">
+    <div className="flex flex-col gap-24  bg-white px-4 pt-12 lg:flex-row lg:px-32">
       <div className="w-full lg:w-1/2">
         <AccordionSec
           dash="—"

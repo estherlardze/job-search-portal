@@ -4,7 +4,6 @@ import { about, account, save, jobs, bluearrow } from "../../assets/index";
 import { IconCard, Slider, Title } from '../../components/About';
 import {Navbar, Footer} from '../../components/index'
 
-
 const About = () => {
   return (
     <div className='w-[100%] overflow-hidden'>
