@@ -1,3 +1,5 @@
+ import {database ,uiux,project,aijob, } from "../../assets"
+ 
  export const cartData = [
     {
       id: "0",
@@ -40,7 +42,7 @@
  export const companyData = [
   {
     id: 1,
-    image: 'image',
+    image: "image",
     name: 'Rockstar Games New York',
     position: 'Online English Teachers',
     location: 'Las Vegas, USA',
@@ -60,7 +62,7 @@
   },
   {
     id: 2,
-    image: 'image',
+    image: database,
     name: 'Rockstar Games New York',
     position: 'Database Administrator',
     location: 'Las Vegas, USA',
@@ -80,7 +82,7 @@
   },
   {
     id: 3,
-    image: 'image',
+    image: project,
     name: 'Rockstar Games New York',
     position: 'IT Project Manager',
     location: 'Las Vegas, USA',
@@ -100,7 +102,7 @@
   },
   {
     id: 4,
-    image: 'image',
+    image: uiux,
     name: 'Rockstar Games New York',
     position: 'Junior UI/UX Designer',
     location: 'Las Vegas, USA',
@@ -120,7 +122,7 @@
   },
   {
     id: 5,
-    image: 'image',
+    image: aijob,
     name: 'Rockstar Games New York',
     position: 'AI/Machine Learning Engineer',
     location: 'Las Vegas, USA',
@@ -180,7 +182,7 @@
   },
   {
     id: 8,
-    image: 'image',
+    image: database,
     name: 'Rockstar Games New York',
     position: 'Social Media Expert',
     location: 'Las Vegas, USA',
@@ -200,7 +202,7 @@
   },
   {
     id: 9,
-    image: 'image',
+    image:project,
     name: 'Rockstar Games New York',
     position: 'Senior UI/UX Designer',
     location: 'Las Vegas, USA',
