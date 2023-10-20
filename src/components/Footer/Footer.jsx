@@ -9,8 +9,9 @@ const transition = 'transition-all ease-in-out duration-500';
 const Footer = () => {
   return (
     <footer className="mx-[5%] mt-[50px] w-[90%] pt-10 lg:mx-[10%] lg:w-[80%]">
-      <section className="mb-8 grid grid-cols-10 gap-12 xl:gap-8">
-        <article className="col-span-6 sm:col-span-6 md:col-span-5 xl:col-span-3">
+      <section className="flex flex-wrap lg:flex-nowrap gap-8 mb-6">
+        
+        <article className="w-full sm:w-2/4 lg:w-1/4">
           <img src={logo} alt="logo" className="w-[100px] sm:w-[180px]" />
           <p className="my-6 text-lg font-semibold text-gray">
             It is a long esta fact that a reader wil dist by the real cont of a
@@ -43,7 +44,7 @@ const Footer = () => {
           </div>
         </article>
 
-        <article className="col-span-10 sm:col-span-4 md:col-span-3 xl:col-span-2">
+        <article className=" w-full sm:w-2/4 lg:w-1/4">
           <h3 className="text-xl font-bold">Main Pages</h3>
           <Link to="/">
             <p
@@ -89,7 +90,7 @@ const Footer = () => {
           </Link>
         </article>
 
-        <article className="col-span-10 sm:col-span-4 md:col-span-2 xl:col-span-2">
+        <article className="w-full sm:w-2/4 lg:w-1/4">
           <h3 className="text-xl font-bold">Quick Links</h3>
           <Link to="/signup">
             <p
@@ -135,7 +136,7 @@ const Footer = () => {
           </Link>
         </article>
 
-        <article className="col-span-6 sm:col-span-6 md:col-span-5 xl:col-span-3">
+        <article className="w-full sm:w-2/4 lg:w-1/4">
           <h3 className="text-xl font-bold">Contact Info</h3>
           <p className="my-1 text-lg font-semibold text-gray">
             Phone:+00 123 456 789
@@ -163,6 +164,7 @@ const Footer = () => {
           </div>
         </article>
       </section>
+
       <hr className="border border-gray/30" />
       <p className="my-6 text-center text-sm font-semibold text-black/80 sm:text-xl">
         Copyright © Careari - Design by

@@ -12,3 +12,4 @@ export {default as SignUp } from './SignUp/SignUp'
 export {default as License } from './License/License'
 export {default as Changelog } from './Changelog/Changelog'
 export {default as Password } from './Passwordchange/Password'
+
