@@ -2,18 +2,18 @@ import { Navbar,Footer } from "../../components";
 
 const SignUp = () => {
   return (
-    <>
+    <div className="w-[100%] overflow-hidden">
       <Navbar />
       <div className=" my-20 mx-1 ">
         <p className="lg:md:capitalize text-blue text-center font-bold mb-4">
           SIGN UP
         </p>
-        <h2 className="text-black font-semibold lg:md:sm:text-7xl text-4xl text-center">
+        <h2 className="text-black/90 font-semibold lg:md:sm:text-6xl text-4xl text-center">
           Create Account
         </h2>
 
         <div className="flex justify-center mt-12">
-          <form className="lg:md:space-y-4 space-y-4 w-96">
+          <form className="lg:md:space-y-4 space-y-4 w-96 mx-4">
             <label htmlFor="username" className="font-semibold text-xl block">
               User Name
             </label>
@@ -81,7 +81,7 @@ const SignUp = () => {
         </div>
       </div>
       <Footer/>
-    </>
+    </div>
   );
 };
 
