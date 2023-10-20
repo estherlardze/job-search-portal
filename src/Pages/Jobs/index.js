@@ -1,10 +1,11 @@
 export const jobs = [
     { id:1,
       companyName: "Google AI",
-      position: "Software Engineer",
+      position: "Database Administrator",
       numberOfVacancies: 1,
       location: "Mountain View, CA",
       dayPosted: "2 days ago",
+      tagName: "arts",
       salaryRange: {
         min: 120000,
         max: 150000
@@ -13,10 +14,11 @@ export const jobs = [
     },
     { id:2,
       companyName: "Meta",
-      position: "Data Scientist",
+      position: "Organist",
       numberOfVacancies: 2,
       location: "New York, NY",
       dayPosted: "1 day ago",
+      tagName: "music",
       salaryRange: {
         min: 130000,
         max: 160000
@@ -29,6 +31,7 @@ export const jobs = [
       numberOfVacancies: 3,
       location: "Seattle, WA",
       dayPosted: "3days ago",
+      tagName: "health",
       salaryRange: {
         min: 140000,
         max: 170000
@@ -41,6 +44,7 @@ export const jobs = [
       numberOfVacancies: 1,
       location: "Redmond, WA",
       dayPosted: "2 days ago",
+      tagName: "finance",
       salaryRange: {
         min: 110000,
         max: 140000
@@ -53,6 +57,7 @@ export const jobs = [
       numberOfVacancies: 1,
       location: "Cupertino, CA",
       dayPosted: "1 week ago",
+      tagName: "marketing",
       salaryRange: {
         min: 125000,
         max: 155000
@@ -65,6 +70,7 @@ export const jobs = [
       numberOfVacancies: 2,
       location: "Los Gatos, CA",
       dayPosted: "3 days ago",
+      tagName: "teaching",
       salaryRange: {
         min: 135000,
         max: 165000
@@ -77,6 +83,7 @@ export const jobs = [
       numberOfVacancies: 1,
       location: "San Francisco, CA",
       dayPosted: "4 days ago",
+      tagName: "photography",
       salaryRange: {
         min: 120000,
         max: 150000
@@ -89,6 +96,7 @@ export const jobs = [
       numberOfVacancies: 2,
       location: "Stockholm, Sweden",
       dayPosted: "1 day ago",
+      tagName: "It",
       salaryRange: {
         min: 130000,
         max: 160000
@@ -101,6 +109,7 @@ export const jobs = [
       numberOfVacancies: 3,
       location: "Dublin, Ireland",
       dayPosted: "5 days ago",
+      tagName: "It",
       salaryRange: {
         min: 140000,
         max: 170000
@@ -113,6 +122,7 @@ export const jobs = [
       numberOfVacancies: 1,
       location: "Singapore",
       dayPosted: "3 days ago",
+      tagName: "music",
       salaryRange: {
         min: 110000,
         max: 140000
