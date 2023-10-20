@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Licence = () => {
+const License = () => {
   return (
     <div>Licence</div>
   )
 }
 
-export default Licence
+export default License

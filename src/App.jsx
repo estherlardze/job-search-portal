@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './index.css'
 import { About, Blog, BlogDetail, Contact, Home, Jobs, JobCategorie, JobDetail, JobPost, SignUp,
-   ArtAndDesign , Licence, Password, Changelog} from './Pages/index'
+   ArtAndDesign , License, Password, Changelog} from './Pages/index'
 import Error from './components/Error'
 import StyleGuide from './components/StlyleGuide'
 
@@ -24,7 +24,7 @@ function App() {
          <Route path='/job/:id' element={<JobDetail/>} />
          <Route path='/signup' element={<SignUp/>} />
          <Route path='/styles' element={<StyleGuide/>} />
-         <Route path='/license' element={<Licence/>} />
+         <Route path='/license' element={<License/>} />
          <Route path='/password' element={<Password/>} />
          <Route path='/changelog' element={<Changelog/>} />
          <Route path='*' element={<Error/>} />
