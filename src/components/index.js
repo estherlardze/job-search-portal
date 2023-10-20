@@ -17,3 +17,5 @@ export { default as Blogs } from './Blogsection/Blogs';
 export { default as Footer } from './Footer/Footer';
 export { default as Post } from './PostJob/Post';
 export { default as Details } from './PostJob/Details';
+export { default as BlogPage } from './BlogPage/BlogPage';
+export { default as SearchBlog } from './BlogPage/SearchBlog';

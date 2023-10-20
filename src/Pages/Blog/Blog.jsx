@@ -1,9 +1,15 @@
-import React from 'react'
+import { BlogPage, Footer, Navbar, SearchBlog } from "../../components";
+
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
-}
+    <div>
+      <Navbar />
+      <SearchBlog />
+      <BlogPage />
+      <Footer />
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;
