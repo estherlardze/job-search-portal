@@ -1,7 +1,8 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './index.css'
-import { About, Blog, BlogDetail, Contact, Home, Jobs, JobCategorie, JobDetail, JobPost, SignUp, ArtAndDesign } from './Pages/index'
+import { About, Blog, BlogDetail, Contact, Home, Jobs, JobCategorie, JobDetail, JobPost, SignUp,
+   License, Password, Changelog} from './Pages/index'
 import Error from './components/Error'
 import StyleGuide from './components/StlyleGuide'
 
@@ -17,12 +18,14 @@ function App() {
          <Route path='/contact' element={<Contact/>} />
          <Route path='/jobs' element={<Jobs/>} />
          <Route path='/jobs/categorie' element={<JobCategorie/>} />
-         <Route path='/jobs/categorie/artsanddesid' element={<ArtAndDesign />} />
          <Route path='/jobs/:categorie' element={<JobCategorie/>} />
          <Route path='/post' element={<JobPost/>} />
          <Route path='/job/:id' element={<JobDetail/>} />
          <Route path='/signup' element={<SignUp/>} />
          <Route path='/styles' element={<StyleGuide/>} />
+         <Route path='/license' element={<License/>} />
+         <Route path='/password' element={<Password/>} />
+         <Route path='/changelog' element={<Changelog/>} />
          <Route path='*' element={<Error/>} />
       </Routes>    
     </Router>

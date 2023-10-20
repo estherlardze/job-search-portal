@@ -20,7 +20,7 @@ const Testimonial = () => {
   }
 
   return (
-    <div className='bg-client bg-cover bg-no-repeat bg-center w-[100%] '>
+    <div className='bg-about bg-cover bg-no-repeat bg-center w-[100%] '>
     <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] py-[70px]'>
        <div className='text-center'>
          <h4 className='text-blue font-bold'>CLIENT FEEDBACK</h4>
