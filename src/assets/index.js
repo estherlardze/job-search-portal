@@ -54,6 +54,9 @@ export {default as profile7} from './images/profile7.png';
 export {default as profile8} from './images/profile8.png';
 export {default as project} from './images/project.svg';
 export {default as save} from './images/save.svg';
+export {default as saveIcon} from './images/saveIcon.svg';
+export {default as seniorDesigner} from './images/seniorDesigner.svg'
+export {default as seniorUIUXDesigner} from './images/seniorUIUXDesigner.svg'
 export {default as style} from './images/style-bg.png';
 export {default as teachings} from './images/teaching.svg';
 export {default as uiux} from './images/ui-ux.svg';

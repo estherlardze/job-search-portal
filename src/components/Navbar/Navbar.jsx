@@ -75,7 +75,7 @@ const Navbar = () => {
         <div className='gap-6 items-center hidden lg:flex'>
           <Link to='/' className='font-semibold hover:text-blue'>Home</Link>
           <Link to='/about' className='font-semibold hover:text-blue'>About</Link>
-          <Link to='/blog' className='font-semibold hover:text-blue'>Blog</Link>
+          <Link to='/blogs' className='font-semibold hover:text-blue'>Blog</Link>
           <div  onClick={togglePages}>
             <div className='flex cursor-pointer hover:text-blue'>
               <span className='font-semibold'>
@@ -91,9 +91,11 @@ const Navbar = () => {
             <button className='font-semibold text-blue hover:text-white border hover:bg-blue rounded-3xl border-blue py-2 px-3 transition-all ease-in-out duration-500'>
               Login/Register
             </button>
+            <Link to='/post'>
             <button className='font-semibold text-white bg-blue hover:bg-black rounded-3xl py-2 px-3 transition-all ease-in-out duration-500'>
               Job Post
             </button>
+            </Link>
          </div>  
        </div> 
 
@@ -106,7 +108,7 @@ const Navbar = () => {
       <div className={smallscreen}>
       <Link to='/' className='font-semibold'>Home</Link>
       <Link to='/about' className='font-semibold'>About</Link>
-      <Link to='/blog' className='font-semibold'>Blog</Link>
+      <Link to='/blogs' className='font-semibold'>Blog</Link>
       <div  onClick={togglePages}>
         <div className='flex cursor-pointer justify-between'>
           <span className='font-semibold'>
@@ -122,9 +124,11 @@ const Navbar = () => {
         <button className='font-semibold text-blue hover:text-white border hover:bg-blue rounded-3xl border-blue py-2 px-3 transition-all ease-in-out duration-500 w-fit'>
           Login/Register
         </button>
+        <Link to='/post'>
         <button className='font-semibold text-white bg-blue hover:bg-black rounded-3xl py-2 px-3 transition-all ease-in-out duration-500 w-fit'>
           Job Post
         </button>
+        </Link>
      </div>  
      <div className='flex gap-4 flex-col font-semibold text-black/75 text-lg mt-8'>
        <p className='flex gap-2'><AiOutlineInstagram size={25}/> 20k followers</p>
