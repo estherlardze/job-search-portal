@@ -1,4 +1,4 @@
-import { FindJob, JobsCardOne } from "../../components";
+import { FindJob, JobsCardOne, JobsCardTwo } from "../../components";
 
 const Jobs = () => {
 
@@ -14,7 +14,9 @@ const Jobs = () => {
         </div>
       </div>
       <div className="sm:flex">
-        <div className="sm:w-2/3">h</div>
+        <div className="sm:w-2/3">
+          <JobsCardTwo/>
+        </div>
         <div className="sm:w-1/3 mx-4 space-y-20">
           <JobsCardOne 
           title="email me job">
