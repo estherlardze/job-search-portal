@@ -17,4 +17,5 @@ export {default as FaQues } from './FaQues/FaQues';
 export {default as GetInTouchWithUs} from './GetInTouchWithUs/GetInTouchWithUs';
 export {default as Details} from './PostJob/Details';
 export {default as Post} from './PostJob/Post';
-
+export {default as JobCartDropDown} from './Jobs/JobCartDropDown';
+export {default as JobCardTwoA} from './Jobs/JobCardTwoA';
