@@ -9,7 +9,7 @@ function AccordionSec({ title, items, reason, sentence, dash }) {
           {reason}
         </p>
         <h2 className="mb-2 text-2xl font-semibold">{title}</h2>
-        <p className='w-full lg:w-7/12'>{sentence}</p>
+        <p className='w-full text-gray font-semibold lg:w-11/12'>{sentence}</p>
       </div>
       <Accordion items={items} />
     </div>

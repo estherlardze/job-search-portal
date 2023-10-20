@@ -1,7 +1,7 @@
 const ReachOut = () => {
   return (
-    <div className="mx-4 rounded-2xl  px-4 shadow-2xl lg:w-1/2 ">
-      <div className="mx-auto mb-20 md:w-2/3">
+    <div className="mx-4 rounded-2xl  px-4 shadow-2xl lg:w-2/3 ">
+      <div className="mx-auto mb-20 md:w-2/3 lg:w-full">
         <form>
           <div className="mb-8 mt-16 flex flex-col items-center gap-8 sm:flex-row">
             <div className="w-full">
@@ -81,7 +81,7 @@ const ReachOut = () => {
               Type your message...
             </textarea>
           </div>
-          <div className="mx-auto w-36 rounded-lg border">
+          <div className="mx-auto inline-flex w-36 rounded-lg border">
             <input
               type="submit"
               value="Send Message"
