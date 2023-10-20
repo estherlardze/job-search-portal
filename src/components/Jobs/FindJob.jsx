@@ -15,7 +15,7 @@ const handleSearch = (e) => {
 }
   return (
     < >
-      <div className='text-gray font-semibold flex flex-col gap-6 sm:gap-3 sm:flex-row justify-start bg-white  2xl:py-6 rounded-full w-full sm:w-fit shadow-2xl py-4 px-4'>
+      <div className='text-gray font-semibold flex flex-col gap-6 sm:gap-3 sm:flex-row justify-start bg-white  2xl:py-6 mx-2 sm:rounded-full sm:w-fit  shadow-2xl py-4 px-4'>
            <div className='flex gap-2 sm:border-r border-slate-300 ml-4  '>
             <CiSearch size={40} className='mt-2'/>
             <input type="text"
