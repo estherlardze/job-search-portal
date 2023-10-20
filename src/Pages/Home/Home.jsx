@@ -4,6 +4,7 @@ import {Navbar, Hero, Achievement, Categories, Jobs,
     from '../../components/index'
 
 
+
 const Home = () => {
   return (
     <div className='w-[100%] overflow-hidden'>
@@ -11,12 +12,12 @@ const Home = () => {
       <Hero/>
       <Achievement/>
       <Categories/>
-      {/*<Jobs/>*/}
+      <Jobs/>
       <About/>
       <Testimonial/>
       <Benefit/>
       <Download/>
-      {/*<Blogs/>*/}
+      <Blogs/>
       <Footer/>
     </div>
   )
