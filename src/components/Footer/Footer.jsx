@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className='mt-[50px] w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%]'>
       <section className='grid grid-cols-10 mb-8 gap-12 xl:gap-8'>
-         <article className='col-span-8 sm:col-span-6 md:col-span-5 xl:col-span-3'>
+         <article className='col-span-6 sm:col-span-6 md:col-span-5 xl:col-span-3'>
          <img src={logo} alt="logo" className='w-[100px] sm:w-[180px]'/>
           <p className='font-semibold text-lg text-gray my-6'>
             It is a long esta fact that a reader wil dist by the real cont of a page when
@@ -72,7 +72,7 @@ const Footer = () => {
            </Link>
          </article>
 
-         <article className='col-span-8 sm:col-span-6 md:col-span-5 xl:col-span-3'>
+         <article className='col-span-6 sm:col-span-6 md:col-span-5 xl:col-span-3'>
            <h3 className='text-xl font-bold'>Contact Info</h3>
            <p className='font-semibold my-1 text-lg text-gray'>Phone:+00 123 456 789</p>
            <p className='font-semibold my-1 text-lg text-gray'>Emaildemomail@gmail.com</p>
@@ -84,13 +84,13 @@ const Footer = () => {
            </div>
            <div className='flex mt-4'>
              <input type="text" placeholder='Enter your Email' 
-              className='w-[40%] sm:w-[70%] px-4 py-0 border border-gray outline-none rounded-sm'/>
+              className='w-[80%] px-4 py-0 border border-gray outline-none rounded-sm'/>
              <BsArrowRightShort size={50} className={`${transition} text-white bg-blue hover:bg-black px-2 rounded-sm`}/>
            </div>
          </article>
       </section>
       <hr className='border border-gray/30'/>
-      <p className='text-center font-semibold my-6 text-xl text-black/80'>
+      <p className='text-center font-semibold my-6 text-sm sm:text-xl text-black/80'>
         Copyright © Careari - Design by 
         <Link to='https://webflow.com/?r=0' className='hover:text-blue'> WebliWeb</Link>
        - Powered by Webflow.

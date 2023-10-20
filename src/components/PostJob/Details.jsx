@@ -1,5 +1,6 @@
 import React from 'react'
 import Jobdetails from './Jobdetails'
+import CompanyDetails from './CompanyDetails'
 
 const Details = () => {
   return (
@@ -10,6 +11,7 @@ const Details = () => {
        </div>
        <hr className='border border-gray/20'/>
        <Jobdetails/>
+       <CompanyDetails/>
     </section>
   )
 }

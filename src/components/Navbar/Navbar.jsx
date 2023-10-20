@@ -75,7 +75,7 @@ const Navbar = () => {
         <div className='gap-6 items-center hidden lg:flex'>
           <Link to='/' className='font-semibold hover:text-blue'>Home</Link>
           <Link to='/about' className='font-semibold hover:text-blue'>About</Link>
-          <Link to='/blog' className='font-semibold hover:text-blue'>Blog</Link>
+          <Link to='/blogs' className='font-semibold hover:text-blue'>Blog</Link>
           <div  onClick={togglePages}>
             <div className='flex cursor-pointer hover:text-blue'>
               <span className='font-semibold'>
