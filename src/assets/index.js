@@ -38,6 +38,7 @@ export {default as logo} from './images/logo.png';
 export {default as market} from './images/market.svg';
 export {default as message} from './images/message.png';
 export {default as music} from './images/music.svg';
+export {default as networkEngineer} from './images/networkEngineer.svg'
 export {default as persons} from './images/persons.png';
 export {default as phones} from './images/phones.jpg';
 export {default as photography} from './images/photography.svg';

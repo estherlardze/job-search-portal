@@ -9,8 +9,8 @@ const transition = 'transition-all ease-in-out duration-500';
 const Footer = () => {
   return (
     <footer className="mx-[5%] mt-[50px] w-[90%] pt-10 lg:mx-[10%] lg:w-[80%]">
-      <section className="flex flex-wrap lg:flex-nowrap gap-8 mb-6">
-        
+      <section className="mb-8 flex gap-8 flex-wrap lg:flex-nowrap">
+
         <article className="w-full sm:w-2/4 lg:w-1/4">
           <img src={logo} alt="logo" className="w-[100px] sm:w-[180px]" />
           <p className="my-6 text-lg font-semibold text-gray">
@@ -164,7 +164,6 @@ const Footer = () => {
           </div>
         </article>
       </section>
-
       <hr className="border border-gray/30" />
       <p className="my-6 text-center text-sm font-semibold text-black/80 sm:text-xl">
         Copyright © Careari - Design by

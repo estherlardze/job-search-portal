@@ -17,7 +17,7 @@ const Categories = () => {
       </div>
       <div className='grid grid-cols-12 w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] gap-6 mt-16'>
         {categories.map((category, index) => (
-          <Link to={`/jobs/${categorie}`} key={index}
+          <Link to={`/jobs/${category.categorie}`} key={index}
           className={`${transition} group col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 border border-gray/20 rounded-md flex flex-col items-center justify-center py-6 hover:border-blue focus:border-blue`}
           >
             <div className='bg-gray/20 p-3 '>

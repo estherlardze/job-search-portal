@@ -13,15 +13,13 @@ const FaQues = () => {
         <div className="pl-8 pt-8">
           <img src={faq} alt="faq" />
         </div>
-        <div className="w-full lg:w-1/2">
-          <AccordionSec
-            title=""
-            items={Faq}
-            reason={null}
-            sentence={null}
-            dash={null}
-          />
-        </div>
+        <AccordionSec
+          title=""
+          items={Faq}
+          reason={null}
+          sentence={null}
+          dash={null}
+        />
       </div>
     </>
   );
