@@ -10,7 +10,7 @@ const Contact = () => {
     <>
       <div>
         <Navbar />
-        <div className="mb-[-2rem] bg-slate-200">
+        <div className="mb-[-2rem]">
           <ContactUs />
           <GetInTouchWithUs />
           <FaQues />

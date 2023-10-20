@@ -38,7 +38,7 @@ const ContactSlide = () => {
         slidesPerView={1}
         spaceBetween={10}
         breakpoints={{
-          640: {
+          320: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
@@ -56,16 +56,16 @@ const ContactSlide = () => {
         {reviews.map((review) => (
           <SwiperSlide
             key={review.id}
-            className="rounded border border-[#006B6A] p-8"
+            className="rounded shadow-xl bg-white p-8"
           >
-            <div>
-              <div className="flex items-center gap-4">
-                <img src={review.Avatar} alt="" className="h-10" />
+            <div className='text-center flex flex-col justify-center'>
+              <div className="mx-auto">
+                <img src={review.Avatar} alt="" className='bg-gray/20 p-3'/>
               </div>
-              <h1 className="pt-4 font-['Sora'] text-[1.5rem]">
+              <h1 className="pt-4 font-['Sora'] text-[1.5rem] font-bold">
                 {review.name}
               </h1>
-              <p className="my-5">{review.comment}</p>
+              <p className="my-3 text-blue font-bold text-lg">{review.comment}</p>
             </div>
           </SwiperSlide>
         ))}

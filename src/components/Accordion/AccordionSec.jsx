@@ -2,7 +2,7 @@ import Accordion from './Accordion';
 
 function AccordionSec({ title, items, reason, sentence, dash }) {
   return (
-    <div className="mb-4">
+    <div className="mx-6">
       <div className="inline-flex flex-col justify-between gap-4 pb-12">
         <p className="font-bold text-blue">
           <span className="pr-2  text-[2rem]">{dash}</span>
