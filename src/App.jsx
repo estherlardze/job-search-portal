@@ -17,7 +17,6 @@ function App() {
          <Route path='/blog/:id' element={<BlogDetail/>} />
          <Route path='/contact' element={<Contact/>} />
          <Route path='/jobs' element={<Jobs/>} />
-         <Route path='/jobs/categorie' element={<JobCategorie/>} />
          <Route path='/jobs/:categorie' element={<JobCategorie/>} />
          <Route path='/post' element={<JobPost/>} />
          <Route path='/job/:id' element={<JobDetail/>} />

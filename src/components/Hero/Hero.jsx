@@ -22,7 +22,7 @@ const handleSearch = (e) => {
           <hr className='border border-blue w-[70px] mt-4'/>
           <h1 className='text-blue font-semibold 2xl:text-4xl'>NO LONGER LOOKING FOR JOB</h1>
          </div>
-         <h1 className='my-8 text-5xl md:text-6xl 2xl:text-7xl font-semibold leading-16'>
+         <h1 className='my-8 text-4xl md:text-6xl 2xl:text-7xl font-semibold leading-16'>
            Signup & Let Your <br />Job find You
          </h1>
          <div className='text-gray font-semibold flex flex-col gap-6 sm:gap-3 sm:flex-row justify-start bg-white py-2 2xl:py-6 rounded-3xl w-full sm:w-fit shadow-2xl px-2'>

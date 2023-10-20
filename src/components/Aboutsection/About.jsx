@@ -1,5 +1,6 @@
 import React from 'react'
 import {aboutus} from '../../assets/index'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -24,7 +25,9 @@ const About = () => {
              <li className='text-xl font-semibold text-black/80 my-4'>Capitalize on low hanging fruit to identify</li>
              <li className='text-xl font-semibold text-black/80'>But I must explain to you how all this</li>
             </ul>
-            <button className='font-semibold text-white bg-blue hover:bg-black rounded-3xl py-2 px-3 transition-all ease-in-out duration-500 w-fit'>Read More</button>
+            <Link to='/about'>
+              <button className='font-semibold text-white bg-blue hover:bg-black rounded-3xl py-2 px-3 transition-all ease-in-out duration-500 w-fit'>Read More</button>
+            </Link>
        </div>
     </section>
   )
