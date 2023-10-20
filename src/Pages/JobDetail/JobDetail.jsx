@@ -6,7 +6,8 @@ import {saveIcon} from '../../assets/index'
 import {GoPerson} from 'react-icons/go'
 import {Navbar, Footer} from '../../components/index'
 import {HiArrowRight} from 'react-icons/hi'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import {HealthAndFitness} from '../JobCategories/index'
 
 const JobDetail = () => {
   return (
@@ -106,7 +107,7 @@ const JobDetail = () => {
              All Jobs
             </Link>
          </div>
-          
+         
           
        </div>
        <Footer/>
