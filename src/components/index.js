@@ -12,4 +12,9 @@ export {default as Benefit} from './Benefits/Benefit';
 export {default as Download} from './Download';
 export {default as Blogs } from './Blogsection/Blogs';
 export {default as Footer} from './Footer/Footer';
+export {default as ContactUs} from './ContactSlide/ContactUs';
+export {default as FaQues } from './FaQues/FaQues';
+export {default as GetInTouchWithUs} from './GetInTouchWithUs/GetInTouchWithUs';
+export {default as Details} from './PostJob/Details';
+export {default as Post} from './PostJob/Post';
 
