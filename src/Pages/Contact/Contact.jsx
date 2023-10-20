@@ -1,11 +1,17 @@
-import { AccordionSection } from '../../components/Accordion';
-import { GetInTouch } from './constant';
-
+import { ContactUs, Download, FaQues, GetInTouchWithUs, Navbar } from '../../components';
 const Contact = () => {
   return (
-    <div>
-      <AccordionSection title="Get in touch with us" items={GetInTouch} />
-    </div>
+    <>
+      <div>
+        <Navbar />
+        <div className="mt-[-8rem] bg-slate-200">
+          <ContactUs />
+          <GetInTouchWithUs />
+          <FaQues />
+          <Download />
+        </div>
+      </div>
+    </>
   );
 };
 

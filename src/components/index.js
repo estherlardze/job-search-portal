@@ -8,3 +8,6 @@ export { default as Testimonial } from './Testimonial/Testimonial';
 export { default as Benefit } from './Benefits/Benefit';
 export { default as Download } from './Download';
 export { default as Accordion } from './Accordion/Accordion';
+export { default as ContactUs } from './ContactSlide/ContactUs';
+export { default as GetInTouchWithUs } from './GetInTouchWithUs/GetInTouchWithUs';
+export { default as FaQues } from './FaQues/FaQues';
