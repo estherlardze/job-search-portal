@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { ArtAndDesign, ArtAndMusic, FinanceAndBusiness, HealthAndFitness, ITManagement, Marketing, Photography, TeachingAndStudy } from './index'
+import { ArtAndDesign, ArtAndMusic, FinanceAndBusiness, HealthAndFitness, ItManagement, Marketing, Photography, TeachingAndStudy } from './index'
 
 const JobCategorie = () => {
   const { categorie } = useParams()
@@ -15,7 +15,7 @@ const JobCategorie = () => {
     case 'health-fitness':
       return <HealthAndFitness />;
     case 'it-management':
-      return <ITManagement />;
+      return <ItManagement />;
     case 'marketing':
       return <Marketing />;
     case 'photography':
