@@ -35,7 +35,7 @@ const ContactSlide = () => {
   return (
     <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={10}
         breakpoints={{
           640: {

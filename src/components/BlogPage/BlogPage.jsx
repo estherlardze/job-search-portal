@@ -42,13 +42,13 @@ const BlogPage = () => {
         <h1 className="text-center text-3xl font-semibold">
           Latest Blog & Articles
         </h1>
-        <div className="inline-flex  w-full items-center gap-8  pt-8">
+        <div className="flex w-full  flex-wrap items-center gap-8  pt-8  lg:flex-nowrap">
           {/* Filter buttons */}
           <button
             onClick={() => {
               handleFilterChange('All');
             }}
-            className="mx-4 my-4 h-12 w-[10rem]  rounded-3xl bg-blue font-bold text-white sm:h-10  lg:w-[5rem]"
+            className="mx-4 my-4 h-12 basis-[15%]   rounded-3xl bg-blue font-bold text-white sm:h-10  lg:w-[5rem]"
           >
             All
           </button>
@@ -56,7 +56,7 @@ const BlogPage = () => {
             onClick={() => {
               handleFilterChange('Recent');
             }}
-            className="h-15 w-[20rem] rounded-3xl border-[1px] border-blue bg-white font-bold text-blue hover:bg-blue hover:text-white sm:h-10 lg:w-[10rem] "
+            className="h-12 basis-[30%] rounded-3xl border-[1px] border-blue bg-white font-bold text-blue hover:bg-blue hover:text-white sm:h-10 lg:w-[10rem] "
           >
             Recent Posts
           </button>
@@ -64,7 +64,7 @@ const BlogPage = () => {
             onClick={() => {
               handleFilterChange('Featured');
             }}
-            className="h-15 w-[20rem] rounded-3xl border-[1px]  border-blue bg-white font-bold text-blue hover:bg-blue hover:text-white sm:h-10 lg:w-[10rem] "
+            className="h-12 basis-[30%] rounded-3xl border-[1px]  border-blue bg-white font-bold text-blue hover:bg-blue hover:text-white sm:h-10 lg:w-[10rem] "
           >
             Feature Posts
           </button>
@@ -72,7 +72,7 @@ const BlogPage = () => {
             onClick={() => {
               handleFilterChange('CompanyPost');
             }}
-            className="h-[3.2rem] w-[25rem] rounded-3xl border-[1px]  border-blue bg-white font-bold text-blue hover:bg-blue hover:text-white sm:h-10 lg:w-[10rem] "
+            className="h-[2.9rem] basis-[40%] rounded-3xl border-[1px]  border-blue bg-white font-bold text-blue hover:bg-blue hover:text-white sm:h-10 lg:w-[10rem] "
           >
             Company Posts
           </button>
@@ -96,7 +96,7 @@ const BlogPage = () => {
                 alt={blog.title}
                 className="h-auto w-full rounded-3xl "
               />
-              <div className="absolute bottom-[7.5rem] left-0 flex gap-4 bg-opacity-60 p-4 text-white">
+              <div className="absolute bottom-[10rem] left-0 flex gap-4 bg-opacity-60 p-4 text-white sm:bottom-[7.5rem] lg:bottom-[9rem]">
                 <div className="flex items-center">
                   <img
                     src={blog.author.avatarUrl}
