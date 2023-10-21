@@ -114,12 +114,15 @@ const SearchBlog = () => {
 
         <div className="flex flex-col gap-8 px-4">
           <div
-            className="flex border-b border-b-slate-300 pb-4"
+            className="flex flex-col border-b border-b-slate-300 pb-4 md:flex-row"
             data-aos="fade-down"
           >
-            <img src={blog3} className="w-1/3   rounded-xl lg:h-2/3 " />
+            <img
+              src={blog3}
+              className="w-full rounded-xl  md:w-1/3 lg:h-2/3 "
+            />
             <div className="ml-2 ">
-              <div className="flex gap-2 font-semibold text-gray">
+              <div className="flex gap-2 pt-4 font-semibold text-gray md:pt-0">
                 <img src={profile3} />
                 <p>Deonte Huag</p>
                 <img src={calender} className="w-4" />
@@ -137,12 +140,15 @@ const SearchBlog = () => {
             </div>
           </div>
           <div
-            className="flex border-b border-b-slate-300 pb-4"
+            className="flex flex-col border-b border-b-slate-300 pb-4 md:flex-row"
             data-aos="fade-down"
           >
-            <img src={blog1} className="w-1/3   rounded-xl lg:h-2/3 " />
+            <img
+              src={blog1}
+              className="w-full rounded-xl   md:w-1/3 lg:h-2/3 "
+            />
             <div className="ml-2 ">
-              <div className="flex gap-2 font-semibold text-gray">
+              <div className="flex gap-2 pt-4 font-semibold text-gray md:pt-0">
                 <img src={profile1} />
                 <p>Deonte Huag</p>
                 <img src={calender} className="w-4" />
@@ -159,10 +165,13 @@ const SearchBlog = () => {
               </div>
             </div>
           </div>
-          <div className="flex  pb-4" data-aos="fade-down">
-            <img src={blog2} className="w-1/3   rounded-xl lg:h-2/3 " />
+          <div className="flex flex-col pb-4 md:flex-row" data-aos="fade-down">
+            <img
+              src={blog2}
+              className="w-full rounded-xl   md:w-1/3 lg:h-2/3 "
+            />
             <div className="ml-2 ">
-              <div className="flex gap-2 font-semibold text-gray">
+              <div className="flex gap-2 pt-4 font-semibold text-gray md:pt-0">
                 <img src={profile2} />
                 <p>Deonte Huag</p>
                 <img src={calender} className="w-4" />
