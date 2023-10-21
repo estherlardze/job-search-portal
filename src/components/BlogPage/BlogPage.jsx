@@ -35,7 +35,10 @@ const BlogPage = () => {
 
   return (
     <div className="flex w-full flex-col">
-      <div className="flex flex-col  justify-around pb-8 pt-20 text-center lg:items-center lg:self-center ">
+      <div
+        className="flex flex-col  justify-around pb-8 pt-20 text-center lg:items-center lg:self-center "
+        data-aos="fade-up"
+      >
         <h1 className="text-center text-3xl font-semibold">
           Latest Blog & Articles
         </h1>
