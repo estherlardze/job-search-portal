@@ -16,20 +16,22 @@ const Jobs = () => {
   return (
     <>
     <Navbar/>
-      <div className="bg-blue/5 overflow-hidden">
+    <div className="w-[100%] overflow-hidden">
+
+      <div className="bg-blue/5 ">
         <div className="space-y-20 py-20">
-          <h2 className="text-4xl font-bold capitalize sm:text-7xl ">
+          <h2 className="text-4xl font-bold capitalize sm:text-7xl text-center">
             Search Your Demanded Job <br />
             Permanent & Remote
           </h2>
           <FindJob />
         </div>
       </div>
-      <div className="lg:flex">
-        <div className="lg:w-2/3 ">
+      <div className="lg:flex px-[10%]">
+        <div className="lg:w-1/2  ">
           <JobsCardTwo />
         </div>
-        <div className="mx-4 space-y-20 lg:w-1/3">
+        <div className="mx-1 space-y-20 lg:w-1/2">
           <JobsCardOne title="email me job">
             <select
               value={selectedOption}
@@ -77,9 +79,10 @@ const Jobs = () => {
             <JobCompaniesCard/>
           </JobsCardOne>
         </div>
-      </div>
+      </div> 
 
-<StartJourneyJob/>
+ <StartJourneyJob/>
+    </div>
 <Footer/>
     </>
   );

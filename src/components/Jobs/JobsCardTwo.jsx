@@ -29,18 +29,20 @@ const JobsCardTwo = () => {
   const canShowPrevious = currentIndex > 0;
 
   return (
-    <div>
-       <div className="sm:flex sm:space-y-0 justify-between space-y-4 px-4">
-       <JobCartDropDown data={shortBy} style="py-4 px-4 bg-gray/10 rounded-full"/>
-       <JobCartDropDown data={perPage}  style="py-4 px-4 bg-gray/10 rounded-full"/>
-<p  className="text-2xl text-gray mt-2 ">Showing 1-10 of 20 Result</p>
+    <div className='' >
+       <div className="sm:flex sm:space-y-0 space-x-4 space-y-4 px-4">
+       <JobCartDropDown data={shortBy} style="py-4 px-8 bg-gray/10 rounded-full "/>
+       <JobCartDropDown data={perPage}  style="py-4 px-6 bg-gray/10 rounded-full"/>
           </div>
+<p  className="text-2xl text-gray mt-2 ">Showing 1-10 of 20 Result</p>
       {companyData
         .slice(currentIndex, currentIndex + showCount)
         .map((item, index) => (
           <div
             key={index}
-            className="rounded-xl px-4 relative mx-3 my-4  border border-slate-200  py-4 hover:border-blue sm:px-12"
+            data-aos="fade-up"
+            data-aos-once = "true"
+            className="rounded-xl px-4 relative  my-4  border border-slate-200   py-4 hover:border-blue sm:pl-2"
           >
             <div className=" space-y-4 border-b border-slate-300">
               <div className="sm:flex ">
@@ -52,14 +54,14 @@ const JobsCardTwo = () => {
                     <img
                       src={saveIcon}
                       alt="bookmark"
-                      className="absolute right-6 h-12 w-12 rounded-full bg-gray/10 p-4 "
+                      className="sm:absolute right-6 h-12 w-12 rounded-full bg-gray/10 p-4 "
                     />
                   </p>
                   <Link to={`/job/${item.id}`}>
                     <p className="font-bold hover:text-blue">{item.position}</p>
                   </Link>
-                  <div className="space-x-4 space-y-4 sm:flex sm:space-y-0">
-                    <div className="flex space-x-2">
+                  <div className="sm:space-x-4 space-y-4 sm:flex sm:space-y-0">
+                    <div className="flex sm:space-x-2">
                       <IoLocationOutline size={20} />
                       <span>{item.location}</span>
                     </div>
