@@ -11,7 +11,7 @@ const About = () => {
       {/* Section 1 */}
       <div className='bg-about bg-cover bg-no-repeat bg-left md:h-[80vh]'>
       <section className="relative w-full">
-        <div className="flex flex-col items-center justify-center text-center px-5 md:px-64 py-24">
+        <div className="flex flex-col items-center justify-center text-center px-5 md:px-64 py-24" data-aos="fade-up">
           <h4 className="text-sm font-bold capitalize text-[#0071DC]">ABOUT CAREARI</h4>
           <h2 className="text-4xl sm:5xl lg:text-6xl font-medium text-black/90 mt-4">
             Our mission is to make the best job market of the world.
@@ -26,14 +26,14 @@ const About = () => {
       </section>
       </div>
       <section className="hero bg-cover bg-no-repeat bg-center mx-[5%] lg:w-[80%] lg:mx-[10%] mb-20">
-        <div className='w-full mb-20'>
+        <div className='w-full relative -top-10 md:-top-22' data-aos="zoom-in">
           <img src={about} alt="" />
         </div>
         
         <Slider />
         <div className="flex flex-col items-center justify-center text-center my-20">
           <Title heading={"OUR NUMBERS"} text1={"The Number Don&apos;t Lie About"} text2={"900+ Job"} />
-          <div className="w-full flex flex-col md:flex-row justify-between mt-10 space-y-8 md:space-y-0">
+          <div className="w-full flex flex-col md:flex-row justify-between mt-10 space-y-8 md:space-y-0" data-aos="fade-up">
             <div className="flex flex-col items-center justify-center space-y-2 md:border-r-2 border-[#7e7e7e] px-10">
               <h2 className='text-3xl font-bold'>9.0M<span className='text-[#0071DC]'>+</span></h2>
               <p className='text-[#7e7e7e] text-xl'>Job Available</p>
@@ -56,10 +56,10 @@ const About = () => {
       {/* End of Section 2 
 
       {/* Section 3 */}
-      <section className="section3 mx-[5%] lg:w-[80%] lg:mx-[10%] my-10">
-        <div className="flex flex-col items-center justify-center h-full text-center bg-[rgba(248,249,254,0.8)]">
+      <section className="section3 py-8 md:py-10 bg-[rgba(248,249,254,0.8)]">
+        <div className="flex flex-col items-center justify-center h-full text-center bg-[rgba(248,249,254,0.8)] mx-[5%] lg:w-[80%] lg:mx-[10%] my-10">
           <Title heading={"HOW IT WORKS?"} text1={"What Our Customers Are"} text2={"Saying About Us"} />
-          <div className="flex flex-col lg:flex-row mt-10 md:space-x-4 md:space-y-0 space-y-4">
+          <div className="flex flex-col lg:flex-row md:justify-between mt-10 md:space-x-4 md:space-y-0 space-y-4">
             <IconCard image={<img src={account} alt="" className='w-10' />} heading={"Create An Accout"} text={"We meet customers in set place to discuss the details about needs and demands before proposing a plan."} />
             <IconCard image={<img src={jobs} alt="" className='w-10' />} heading={"Search Jobs"} text={"Our experts come up with all kinds of initiatives for delivering the best solutions for IT services chosen."} />
             <IconCard image={<img src={save} alt="" className='w-10' />} heading={"Save & Apply"} text={"Once the final plan is approved, everything will be conducted according to the agreed contract."} />
