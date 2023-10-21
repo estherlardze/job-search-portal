@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Jobdetails from './Jobdetails'
+import Jobdetails from './JobDetails'
 import CompanyDetails from './CompanyDetails'
 
 const headStyle = "text-3xl font-semibold text-black/90 border-b-2 pb-8"
