@@ -1,6 +1,8 @@
+import { CiSearch } from 'react-icons/ci';
 import {
   arrow,
   blog1,
+  blog2,
   blog3,
   blog4,
   calender,
@@ -11,52 +13,49 @@ import {
   profile5,
   profile7,
 } from '../../assets';
+import { Link } from 'react-router-dom';
 
 const SearchBlog = () => {
   const blog = {
-    title: 'Sample Blog Post',
+    title: '5 Ways Technology Has Improved Business Today',
     content:
-      'This is the content of the blog post. It provides some information about the topic of the post.',
+      'It is a long established fact that a reader will be distracted by the real conten of a page when looking......',
     date: 'October 20, 2023',
     imageUrl: blog4,
     author: {
-      name: 'Vinny Doe',
-      avatarUrl: profile1,
+      name: 'Tilly Thomas',
+      avatarUrl: profile4,
     },
   };
 
   return (
     <>
-      <div className="flex justify-between bg-slate-200 px-4 pb-16 pt-20">
-        <h1 className="text-3xl font-semibold ">
-          Browse our articles & resources
+      <div
+        className={`flex justify-around lg:justify-between ${
+          window.location.pathname === '/blogs' ? 'bg-slate-200' : 'bg-white'
+        }  bg-slate-200 px-4 pb-16 pt-20 lg:px-14`}
+      >
+        <h1 className="text-5xl  font-semibold ">
+          Browse our articles & <br /> resources
         </h1>
-        <div className="relative">
+        <div className=" my-[0.99rem] flex   items-center justify-between rounded-3xl border-[1px]   border-blue">
           <input
-            type="text"
-            className="w-64 rounded-3xl border-[1px] border-blue bg-slate-200 py-2 pl-10 pr-4 focus:outline-none"
-            placeholder="Search Blog & Articles..."
+            placeholder="Search Blog & Articles"
+            className={`ml-4  bg-slate-200 ${
+              window.location.pathname === '/blogs'
+                ? 'bg-slate-200'
+                : 'bg-white'
+            } py-2 focus:outline-none `}
           />
-          <button className="bg-blue-500 absolute left-2 top-0 rounded-l-md px-2 py-2 text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6  "
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-              />
-            </svg>
-          </button>
+          {window.location.pathname === '/blogs' && <CiSearch size={22} />}
         </div>{' '}
       </div>
-      <div className="mb-16 flex flex-col bg-slate-200 pb-20 lg:flex-row lg:px-8">
-        <div className="blog-card">
+      <div
+        className={`mb-16 flex flex-col ${
+          window.location.pathname === '/blogs' ? 'bg-slate-200' : 'bg-white'
+        }  pb-20 lg:flex-row lg:px-8`}
+      >
+        <div className="blog-card pb-10">
           <div className="relative">
             <img
               src={blog.imageUrl}
@@ -93,15 +92,22 @@ const SearchBlog = () => {
               </div>
             </div>
           </div>
-          <div className="p-4">
+          <div className="inline-flex flex-col gap-4 p-4">
             <div>
-              <p className="text-xl font-bold">{blog.title}</p>
-              <p>{blog.content}</p>
+              <Link
+                className="hover:cursor-pointer hover:text-blue"
+                to="/blog/:id"
+              >
+                <p className="text-2xl font-semibold ">{blog.title}</p>
+              </Link>
+              <p className="pt-2 text-slate-500">{blog.content}</p>
             </div>
-            <p className="flex gap-2 font-semibold text-blue">
-              View More
-              <img src={arrow} alt="View More" className="w-4" />
-            </p>
+            <Link className="hover:cursor-pointer" to="/blog/:id">
+              <p className="flex gap-2 font-semibold text-blue">
+                View More
+                <img src={arrow} alt="View More" className="w-4" />
+              </p>
+            </Link>
           </div>
         </div>
 
@@ -127,10 +133,10 @@ const SearchBlog = () => {
             </div>
           </div>
           <div className="flex border-b border-b-slate-300 pb-4">
-            <img src={blog3} className="w-1/3   rounded-xl lg:h-2/3 " />
+            <img src={blog1} className="w-1/3   rounded-xl lg:h-2/3 " />
             <div className="ml-2 ">
               <div className="flex gap-2 font-semibold text-gray">
-                <img src={profile3} />
+                <img src={profile1} />
                 <p>Deonte Huag</p>
                 <img src={calender} className="w-4" />
                 <p>July 31, 2022</p>
@@ -147,10 +153,10 @@ const SearchBlog = () => {
             </div>
           </div>
           <div className="flex  pb-4">
-            <img src={blog3} className="w-1/3   rounded-xl lg:h-2/3 " />
+            <img src={blog2} className="w-1/3   rounded-xl lg:h-2/3 " />
             <div className="ml-2 ">
               <div className="flex gap-2 font-semibold text-gray">
-                <img src={profile3} />
+                <img src={profile2} />
                 <p>Deonte Huag</p>
                 <img src={calender} className="w-4" />
                 <p>July 31, 2022</p>
