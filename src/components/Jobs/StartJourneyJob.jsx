@@ -2,7 +2,7 @@ import React from 'react'
 
 const StartJourneyJob = () => {
   return (
-    <div className='py-20 border my-20 border-slate-500/20 space-y-16 px-8'>
+    <div className='py-20 border my-20 border-slate-500/20 space-y-16 px-8 overflow-hidden'>
      <p className="font-normal text-5xl text-center"> Are You Ready To Start  <br/>Your Journey?</p>
 
      <p className="text-center text-gray  font-semibold">It is a long established fact that a reader will be distracted by the real conten of a page when looking at its layout. The point of using Lorem Ipsum is.</p>
