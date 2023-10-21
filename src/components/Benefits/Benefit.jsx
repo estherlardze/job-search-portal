@@ -7,24 +7,26 @@ import { Link } from 'react-router-dom'
 const Benefit = () => {
   return (
     <section className='flex items-center flex-col lg:flex-row py-[100px] w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] gap-12'>
-     <div> 
+     <div data-aos="zoom-in"> 
       <img src={uploadcv} alt="cv" />
      </div>
      <div>
-      <div className='flex gap-1'>
+      <div className='flex gap-1' data-aos="fade-left">
        <hr className='border border-blue w-[50px] mt-4'/>
-       <h1 className='text-blue font-semibold text-xl 2xl:text-4xl'>OUR BENEFITS</h1>
+       <h1 className='text-blue font-semibold text-xl 2xl:text-4xl' data-aos="fade-left" data-aos-duration="1000">
+        OUR BENEFITS
+       </h1>
       </div>
-      <h1 className='my-8 text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-semibold leading-20 text-black/80'>
+      <h1 className='my-8 text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-semibold leading-20 text-black/80' data-aos="fade-left" data-aos-duration="1500">
         The ultimate platform For job seekers.
       </h1>
-      <p className='text-xl leading-8 text-gray font-semibold mb-[30px]'>
+      <p className='text-xl leading-8 text-gray font-semibold mb-[30px]' data-aos="fade-left" data-aos-duration="2000">
         It is a long established fact that a reader will be distracted by the real 
         conten of a page when looking at its layout
       </p>
        <div>
           {benefits.map((benefit, index) => (
-            <article key={index} className=' border-b border-gray/20 '>
+            <article key={index} className=' border-b border-gray/20 ' data-aos="fade-left" data-aos-duration="2500">
                 <div className='flex justify-between my-6'>
                 <img src={benefit.image} alt="benefit" />
                 <div>
