@@ -5,7 +5,6 @@ const inputStyle = "text-lg font-thin text-black px-4 py-2 outline-none border b
 const Jobdetails = () => {
   return (
     <div>
-      <form className='rounded-md shadow-lg w-full mt-8 sm:w-[80%] sm:mx-[10%] lg:w-[70%] lg:mx-[15%] p-8'>
          <div className='grid grid-cols-10 gap-6 w-full mb-6'>
           <label htmlFor="title" className='text-xl font-semibold text-black/90 col-span-10 lg:col-span-5'>
            Job Title <br />
@@ -68,7 +67,6 @@ const Jobdetails = () => {
            className={inputStyle}/>
          </label>
          </div>
-       </form>
     </div>
   )
 }

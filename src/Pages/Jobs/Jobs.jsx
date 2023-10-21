@@ -5,6 +5,7 @@ import JobCompaniesCard from '../../components/Jobs/JobCompaniesCard';
 
 import { cartData } from '../../components/Jobs/JobData';
 import { Navbar,Footer } from "../../components";
+import { HiOutlineArrowSmallRight } from 'react-icons/hi2';
 
 const Jobs = () => {
   const [selectedOption, setSelectedOption] = useState('none');
@@ -15,7 +16,7 @@ const Jobs = () => {
   return (
     <>
     <Navbar/>
-      <div className="bg-blue/5">
+      <div className="bg-blue/5 overflow-hidden">
         <div className="space-y-20 py-20">
           <h2 className="text-4xl font-bold capitalize sm:text-7xl ">
             Search Your Demanded Job <br />
@@ -24,11 +25,11 @@ const Jobs = () => {
           <FindJob />
         </div>
       </div>
-      <div className="sm:flex">
-        <div className="sm:w-2/3">
+      <div className="lg:flex">
+        <div className="lg:w-2/3 ">
           <JobsCardTwo />
         </div>
-        <div className="mx-4 space-y-20 sm:w-1/3">
+        <div className="mx-4 space-y-20 lg:w-1/3">
           <JobsCardOne title="email me job">
             <select
               value={selectedOption}
@@ -66,9 +67,9 @@ const Jobs = () => {
               <input type="radio" name="time" id="t4 " />
               <label htmlFor="#t4">Annually</label>
             </div>
-            <button className="w-full rounded-full  border  border-blue px-3 py-4 font-semibold capitalize text-blue transition-all duration-500 ease-in-out text-center ">
+            <button className="w-full rounded-full  border  border-blue px-3 py-4 font-semibold capitalize text-blue transition-all duration-500 ease-in-out text-center flex justify-center">
               Create Alert 
-              <img src="" alt="a"/>
+             <HiOutlineArrowSmallRight size={25} />
             </button>
           </JobsCardOne>
 

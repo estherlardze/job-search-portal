@@ -30,9 +30,9 @@ const JobsCardTwo = () => {
 
   return (
     <div>
-       <div className="sm:flex justify-between space-y-4 px-4">
-       <JobCartDropDown data={shortBy} style="py-4 px-4 bg-gray rounded-full"/>
-       <JobCartDropDown data={perPage}  style="py-4 px-4 bg-gray rounded-full"/>
+       <div className="sm:flex sm:space-y-0 justify-between space-y-4 px-4">
+       <JobCartDropDown data={shortBy} style="py-4 px-4 bg-gray/10 rounded-full"/>
+       <JobCartDropDown data={perPage}  style="py-4 px-4 bg-gray/10 rounded-full"/>
 <p  className="text-2xl text-gray mt-2 ">Showing 1-10 of 20 Result</p>
           </div>
       {companyData
@@ -40,6 +40,8 @@ const JobsCardTwo = () => {
         .map((item, index) => (
           <div
             key={index}
+            data-aos="fade-up"
+            data-aos-once = "true"
             className="rounded-xl px-4 relative mx-3 my-4  border border-slate-200  py-4 hover:border-blue sm:px-12"
           >
             <div className=" space-y-4 border-b border-slate-300">
@@ -113,8 +115,8 @@ const JobsCardTwo = () => {
         ))}
 
         <div className= "flex justify-center mb-4">
-      {canShowPrevious && <button onClick={showPreviousCards} className="     border  border-blue px-12 rounded-lg py-4 font-semibold capitalize text-white bg-blue hover:bg-black transition-all duration-500 ease-in-out text-center flex gap-3"> <HiOutlineArrowSmallLeft size={25}/>Previous</button>}
-      {canShowNext && <button onClick={showNextCards} className="   border  border-blue px-12 rounded-lg py-4 font-semibold capitalize text-white bg-blue hover:bg-black transition-all duration-500 ease-in-out text-center flex gap-3">Next <HiOutlineArrowSmallRight size= {25}/> </button>}
+      {canShowPrevious && <button onClick={showPreviousCards} className="     border  border-blue px-12 rounded-full py-4 font-semibold capitalize text-white bg-blue hover:bg-black transition-all duration-500 ease-in-out text-center flex gap-3"> <HiOutlineArrowSmallLeft size={25}/>Previous</button>}
+      {canShowNext && <button onClick={showNextCards} className="   border  border-blue px-12 rounded-full py-4 font-semibold capitalize text-white bg-blue hover:bg-black transition-all duration-500 ease-in-out text-center flex gap-3">Next <HiOutlineArrowSmallRight size= {25}/> </button>}
         </div>
 
 

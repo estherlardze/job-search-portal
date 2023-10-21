@@ -6,7 +6,6 @@ const inputStyle =
 const Jobdetails = () => {
   return (
     <div>
-      <form className="mt-8 w-full rounded-md p-8 shadow-lg sm:mx-[10%] sm:w-[80%] lg:mx-[15%] lg:w-[70%]">
         <div className="mb-6 grid w-full grid-cols-10 gap-6">
           <label
             htmlFor="title"
@@ -98,7 +97,7 @@ const Jobdetails = () => {
             />
           </label>
         </div>
-      </form>
+
     </div>
   );
 };

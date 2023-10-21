@@ -10,11 +10,11 @@ const JobCompaniesCard = () => {
     {
         companyDetails.map((item,index)=>(
 
-            <div key={index} className="sm:flex">
+            <div key={index} className="lg:flex ">
             <img src={item.image} alt="logo" />
-            <div className="sm:ml-12 flex">
+            <div className=" md:flex justify-between">
                 <div>
-              <p className="px-4 pb-4 font-bold text-2xl"> {item.name} </p>
+              <p className=" pb-4 font-bold text-2xl"> {item.name} </p>
               <div className="flex space-x-2">
                 <IoLocationOutline size={20} />
                 <span> Vegas, USA</span>
@@ -22,7 +22,7 @@ const JobCompaniesCard = () => {
                 </div>
             <HiOutlineArrowSmallRight
               size={40}
-              className="ml-12 mt-4 rounded-full bg-white p-2 "
+              className=" mt-4 rounded-full bg-white p-2 "
             />
             </div>
           </div>
