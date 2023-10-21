@@ -40,6 +40,8 @@ const JobsCardTwo = () => {
         .map((item, index) => (
           <div
             key={index}
+            data-aos="fade-up"
+            data-aos-once = "true"
             className="rounded-xl px-4 relative mx-3 my-4  border border-slate-200  py-4 hover:border-blue sm:px-12"
           >
             <div className=" space-y-4 border-b border-slate-300">
