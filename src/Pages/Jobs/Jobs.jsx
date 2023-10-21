@@ -16,6 +16,8 @@ const Jobs = () => {
   return (
     <>
     <Navbar/>
+    <div className="w-[100%] overflow-hidden">
+
       <div className="bg-blue/5 ">
         <div className="space-y-20 py-20">
           <h2 className="text-4xl font-bold capitalize sm:text-7xl text-center">
@@ -80,6 +82,7 @@ const Jobs = () => {
       </div> 
 
  <StartJourneyJob/>
+    </div>
 <Footer/>
     </>
   );
