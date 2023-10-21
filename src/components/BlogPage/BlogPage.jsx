@@ -96,7 +96,7 @@ const BlogPage = () => {
                 alt={blog.title}
                 className="h-auto w-full rounded-3xl "
               />
-              <div className="absolute bottom-[7.5rem] left-0 flex gap-4 bg-opacity-60 p-4 text-white">
+              <div className="absolute bottom-[10rem] sm:bottom-[8rem] md:bottom-[7.5rem] mt-6 left-0 flex gap-4 bg-opacity-60 p-4 text-white">
                 <div className="flex items-center">
                   <img
                     src={blog.author.avatarUrl}

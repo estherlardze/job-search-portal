@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Error = () => {
   return (
-    <div>
+    <div className='w-[100%] overflow-hidden'>
        <Navbar/>
         <div className='flex flex-col items-center justify-center mx-2 mt-[50px]'>
             <img src={error} alt="error image" />

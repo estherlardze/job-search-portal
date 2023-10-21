@@ -8,7 +8,8 @@ import { BsArrowRightShort } from 'react-icons/bs';
 const transition = 'transition-all ease-in-out duration-500';
 const Footer = () => {
   return (
-    <footer className="mx-[5%] mt-[50px] w-[90%] pt-10 lg:mx-[10%] lg:w-[80%]">
+    <footer className="bg-blue/5">
+      <div className='mx-[5%] mt-[50px] w-[90%] pt-10 lg:mx-[10%] lg:w-[80%]'>
       <section className="mb-8 flex gap-8 flex-wrap lg:flex-nowrap">
 
         <article className="w-full sm:w-2/4 lg:w-1/4" data-aos="fade-right" data-aos-duration="2000">
@@ -173,6 +174,7 @@ const Footer = () => {
         </Link>
         - Powered by Webflow.
       </p>
+      </div>
     </footer>
   );
 };
