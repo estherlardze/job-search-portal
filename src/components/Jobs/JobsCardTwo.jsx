@@ -42,7 +42,7 @@ const JobsCardTwo = () => {
             key={index}
             data-aos="fade-up"
             data-aos-once = "true"
-            className="rounded-xl px-4 relative  my-4  border border-slate-200 sm:w-fit  py-4 hover:border-blue sm:pl-2"
+            className="rounded-xl px-4 relative  my-4  border border-slate-200   py-4 hover:border-blue sm:pl-2"
           >
             <div className=" space-y-4 border-b border-slate-300">
               <div className="sm:flex ">
