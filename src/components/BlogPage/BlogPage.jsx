@@ -80,7 +80,8 @@ const BlogPage = () => {
       </div>
       <div
         key={aosKey}
-        className="blog-card grid gap-16 px-8  lg:w-full lg:grid-cols-2"
+        className="blog-card  grid gap-16 px-8  lg:w-full lg:grid-cols-2"
+        data-aos="fade-up"
       >
         {filteredBlogs().map((blog, index) => (
           <>
