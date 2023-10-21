@@ -19,3 +19,4 @@ export {default as Details} from './PostJob/Details';
 export {default as Post} from './PostJob/Post';
 export {default as JobCartDropDown} from './Jobs/JobCartDropDown';
 export {default as JobCardTwoA} from './Jobs/JobCardTwoA';
+export { default as StartJourneyJob} from './Jobs/StartJourneyJob'
