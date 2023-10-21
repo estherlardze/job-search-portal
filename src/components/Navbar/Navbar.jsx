@@ -7,6 +7,8 @@ import {IoCall} from 'react-icons/io5'
 import {FaLinkedinIn} from 'react-icons/fa'
 import Catdropdown from './Catdropdown';
 import PagesDropdown from './PagesDropdown';
+import Dialog from '../Auth/Dialog'
+import Login from '../Auth/Login'
 
 const smallscreen = "gap-6 justify-start flex flex-col lg:hidden bg-white z-20 h-[100vh] w-[200px] sm:w-[300px] absolute left-0 top-0 px-4 py-4 transition-transform duration-300 ease-in-out"
 const Navbar = () => {
@@ -14,6 +16,12 @@ const Navbar = () => {
   const [pageOpen, setPageOpen] = useState(false);
   const [menu, setMenu] = useState(false);
   const [option, setOption] = useState('english')
+  const [isShowDialog, setIsShowDialog] = useState(false);
+
+  const handleDialog = () => {
+    setIsShowDialog(!isShowDialog)
+  }
+
 
   const handleSelect = (e) => {
    setOption(e.target.value)
@@ -31,6 +39,7 @@ const Navbar = () => {
   }
 
   return (
+    <>
     <nav className='relative w-[100%]'>
       <article className='flex justify-between bg-[#0a0d33] items-center  px-4 text-white/75 py-4 font-semibold'>
          <div className='hidden lg:flex gap-4 '>
@@ -88,7 +97,7 @@ const Navbar = () => {
 
          <Link to='/contact' className='font-semibold hover:text-blue'>Contact </Link>
           <div className='flex gap-4'>
-            <button className='font-semibold text-blue hover:text-white border hover:bg-blue rounded-3xl border-blue py-2 px-3 transition-all ease-in-out duration-500'>
+            <button className='font-semibold text-blue hover:text-white border hover:bg-blue rounded-3xl border-blue py-2 px-3 transition-all ease-in-out duration-500'  onClick={handleDialog}>
               Login/Register
             </button>
             <Link to='/post'>
@@ -147,6 +156,16 @@ const Navbar = () => {
      )}
      
     </nav>
+
+    {isShowDialog && (
+        <Dialog
+          handleCloseDialog={handleDialog}
+        >
+         <Login/>
+        </Dialog>
+      )}
+
+    </>
   )
 }
 
