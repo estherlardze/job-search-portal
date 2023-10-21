@@ -165,7 +165,7 @@ const Footer = () => {
         </article>
       </section>
       <hr className="border border-gray/30" />
-      <p className="my-6 text-center text-sm font-semibold text-black/80 sm:text-xl" data-aos="zoom-in" data-aos-duration="2000">
+      <p className="my-6 text-center text-sm font-semibold text-black/80 sm:text-xl">
         Copyright © Careari - Design by
         <Link to="https://webflow.com/?r=0" className="hover:text-blue">
           {' '}

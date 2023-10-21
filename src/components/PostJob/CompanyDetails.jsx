@@ -97,7 +97,9 @@ const Jobdetails = () => {
             />
           </label>
         </div>
-
+        <button className='text-white bg-blue px-8 py-2 hover:bg-black rounded-full mt-6 font-semibold transition-all'>
+           Submit for approval
+         </button>
     </div>
   );
 };

@@ -130,7 +130,8 @@ const Navbar = () => {
 
      <Link to='/contact' className='font-semibold'>Contact </Link>
       <div className='flex gap-4 flex-col'>
-        <button className='font-semibold text-blue hover:text-white border hover:bg-blue rounded-3xl border-blue py-2 px-3 transition-all ease-in-out duration-500 w-fit'>
+        <button className='font-semibold text-blue hover:text-white border hover:bg-blue rounded-3xl border-blue py-2 px-3 transition-all ease-in-out duration-500 w-fit'
+          onClick={handleDialog}>
           Login/Register
         </button>
         <Link to='/post'>
