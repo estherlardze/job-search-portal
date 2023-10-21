@@ -8,7 +8,7 @@ import {
 const Contact = () => {
   return (
     <>
-      <div>
+      <div className='w-[100%] overflow-hidden'>
         <Navbar />
         <div className="mb-[-2rem] mt-[-8rem] bg-slate-200">
           <ContactUs />
