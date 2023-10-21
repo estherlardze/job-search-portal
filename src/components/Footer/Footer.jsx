@@ -1,4 +1,3 @@
-import React from 'react';
 import { logo } from '../../assets/index';
 import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { FaLinkedinIn, FaFacebookF } from 'react-icons/fa';
@@ -45,7 +44,11 @@ const Footer = () => {
           </div>
         </article>
 
-        <article className=" w-full sm:w-2/4 lg:w-1/4" data-aos="fade-left" data-aos-duration="2000">
+        <article
+          className=" w-full sm:w-2/4 lg:w-1/4"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <h3 className="text-xl font-bold">Main Pages</h3>
           <Link to="/">
             <p
@@ -91,7 +94,11 @@ const Footer = () => {
           </Link>
         </article>
 
-        <article className="w-full sm:w-2/4 lg:w-1/4" data-aos="fade-right" data-aos-duration="2000">
+        <article
+          className="w-full sm:w-2/4 lg:w-1/4"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <h3 className="text-xl font-bold">Quick Links</h3>
           <Link to="/signup">
             <p
@@ -137,7 +144,11 @@ const Footer = () => {
           </Link>
         </article>
 
-        <article className="w-full sm:w-2/4 lg:w-1/4" data-aos="fade-left" data-aos-duration="2000">
+        <article
+          className="w-full sm:w-2/4 lg:w-1/4"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <h3 className="text-xl font-bold">Contact Info</h3>
           <p className="my-1 text-lg font-semibold text-gray">
             Phone:+00 123 456 789
@@ -166,7 +177,11 @@ const Footer = () => {
         </article>
       </section>
       <hr className="border border-gray/30" />
-      <p className="my-6 text-center text-sm font-semibold text-black/80 sm:text-xl">
+      <p
+        className="my-6 text-center text-sm font-semibold text-black/80 sm:text-xl"
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
         Copyright © Careari - Design by
         <Link to="https://webflow.com/?r=0" className="hover:text-blue">
           {' '}
