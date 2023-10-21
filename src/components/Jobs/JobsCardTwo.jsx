@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { companyData ,cartData,shortBy,perPage } from '../../components/Jobs/JobData';
+import { companyData ,shortBy,perPage } from '../../components/Jobs/JobData';
 import { JobCartDropDown } from '../../components';
 import { saveIcon } from '../../assets';
 import { Link } from 'react-router-dom';
@@ -40,7 +40,7 @@ const JobsCardTwo = () => {
         .map((item, index) => (
           <div
             key={index}
-            className="rounded-xl px-4 relative mx-3 my-4 rounded-lg border border-slate-200  py-4 hover:border-blue sm:px-12"
+            className="rounded-xl px-4 relative mx-3 my-4  border border-slate-200  py-4 hover:border-blue sm:px-12"
           >
             <div className=" space-y-4 border-b border-slate-300">
               <div className="sm:flex ">
