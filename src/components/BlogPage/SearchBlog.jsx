@@ -34,6 +34,7 @@ const SearchBlog = () => {
         className={`flex justify-around lg:justify-between ${
           window.location.pathname === '/blogs' ? 'bg-slate-200' : 'bg-white'
         }  bg-slate-200 px-4 pb-16 pt-20 lg:px-14`}
+        data-aos="fade-up"
       >
         <h1 className="text-5xl  font-semibold ">
           Browse our articles & <br /> resources
@@ -55,7 +56,7 @@ const SearchBlog = () => {
           window.location.pathname === '/blogs' ? 'bg-slate-200' : 'bg-white'
         }  pb-20 lg:flex-row lg:px-8`}
       >
-        <div className="blog-card pb-10">
+        <div className="blog-card pb-10" data-aos="fade-left">
           <div className="relative">
             <img
               src={blog.imageUrl}
@@ -112,7 +113,10 @@ const SearchBlog = () => {
         </div>
 
         <div className="flex flex-col gap-8 px-4">
-          <div className="flex border-b border-b-slate-300 pb-4">
+          <div
+            className="flex border-b border-b-slate-300 pb-4"
+            data-aos="fade-down"
+          >
             <img src={blog3} className="w-1/3   rounded-xl lg:h-2/3 " />
             <div className="ml-2 ">
               <div className="flex gap-2 font-semibold text-gray">
@@ -132,7 +136,10 @@ const SearchBlog = () => {
               </div>
             </div>
           </div>
-          <div className="flex border-b border-b-slate-300 pb-4">
+          <div
+            className="flex border-b border-b-slate-300 pb-4"
+            data-aos="fade-down"
+          >
             <img src={blog1} className="w-1/3   rounded-xl lg:h-2/3 " />
             <div className="ml-2 ">
               <div className="flex gap-2 font-semibold text-gray">
@@ -152,7 +159,7 @@ const SearchBlog = () => {
               </div>
             </div>
           </div>
-          <div className="flex  pb-4">
+          <div className="flex  pb-4" data-aos="fade-down">
             <img src={blog2} className="w-1/3   rounded-xl lg:h-2/3 " />
             <div className="ml-2 ">
               <div className="flex gap-2 font-semibold text-gray">

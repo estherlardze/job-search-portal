@@ -1,12 +1,13 @@
-import { BlogPage, Footer, Navbar, SearchBlog } from "../../components";
-
+import { BlogPage, Footer, Navbar, SearchBlog } from '../../components';
 
 const Blog = () => {
   return (
     <div>
       <Navbar />
-      <SearchBlog />
-      <BlogPage />
+      <div data-aos="fade-up">
+        <SearchBlog />
+        <BlogPage />
+      </div>
       <Footer />
     </div>
   );
