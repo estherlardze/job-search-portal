@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
+import {BsFacebook, BsLinkedin, BsTwitter} from 'react-icons/bs'
+import {FcGoogle} from 'react-icons/fc'
 
 const Login = () => {
   return (
     <div >
       <div className=" mx-1 mt-8 ">
         <div className=" flex justify-center">
-          <form className="mx-4 w-96 space-y-4 lg:md:space-y-4">
+          <form className="mx-4 w-full sm:w-96 space-y-4 lg:md:space-y-4">
             <label htmlFor="username" className="block text-xl font-semibold">
               User Name
             </label>
@@ -35,7 +37,12 @@ const Login = () => {
         </div>
         <div className="space-y-8 pt-8">
           <p className="text-center font-black">Or Sign Up With</p>
-          <div className="flex justify-center"> images</div>
+          <div className="flex justify-center gap-4">
+            <BsFacebook size={21} className='text-blue cursor-pointer'/>
+            <FcGoogle size={21}/>
+            <BsLinkedin size={21} className='text-blue cursor-pointer'/>
+            <BsTwitter size={21} className='text-blue cursor-pointer'/>
+          </div>
           <Link to="/signup">
             <p className="text-center font-bold text-blue mt-8"> Sign Up</p>
           </Link>

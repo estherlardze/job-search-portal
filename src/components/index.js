@@ -23,3 +23,4 @@ export {default as JobCartDropDown} from './Jobs/JobCartDropDown';
 export {default as JobCardTwoA} from './Jobs/JobCardTwoA';
 export { default as StartJourneyJob} from './Jobs/StartJourneyJob'
 export { default as Dialog} from './Auth/Dialog'
+export { default as JobCard} from './JobCard'

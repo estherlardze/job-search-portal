@@ -7,7 +7,7 @@ import {GoPerson} from 'react-icons/go'
 import {Navbar, Footer} from '../../components/index'
 import {HiArrowRight} from 'react-icons/hi'
 import { Link } from 'react-router-dom';
-import {HealthAndFitness} from '../JobCategories/index'
+import {JobCard} from '../../components/index'
 
 const JobDetail = () => {
   return (
@@ -100,15 +100,16 @@ const JobDetail = () => {
           </article>
          ))}
        </div>
-       <div className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] my-[50px]'>
+       <div className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] mt-[80px] mb-[50px]'>
          <div className='flex justify-between'>
            <h1 className='text-4xl md:text5-xl lg:text-6xl font-semibold '>More job openings</h1>
            <Link to='/jobs' className='bg-blue py-2 px-4 hover:bg-black text-white font-bold rounded-full h-fit'>
              All Jobs
             </Link>
          </div>
-         
-          
+          <div className='mt-8'>
+             <JobCard/>
+          </div>        
        </div>
        <Footer/>
     </section>

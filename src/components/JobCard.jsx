@@ -1,35 +1,32 @@
-import { companyData } from '../../components/Jobs/JobData';
-import { saveIcon } from '../../assets';
+import { companyData } from './Jobs/JobData';
+import { saveIcon } from '../assets/index';
 import { Link } from 'react-router-dom';
 
 import { GoPerson } from 'react-icons/go';
 import { CiDollar, CiCalendar } from 'react-icons/ci';
 import { IoLocationOutline } from 'react-icons/io5';
-const JobsCardTwoA = () => {
+
+const JobCard = () => {
   return (
-    <div>
+    <div className='grid grid-cols-2 gap-8'>
       {companyData.map((item, index) => (
         <div
           key={index}
-          className="rounded-xlpx-4 relative mx-3 my-4 rounded-lg border border-slate-200  py-4 hover:border-blue sm:px-12"
+          data-aos="fade-up"
+          className="w-full col-span-2 lg:col-span-1 px-4 mx-3 my-4 rounded-lg border border-slate-200  py-4 hover:border-blue"
         >
-          <div className=" space-y-4 border-b border-slate-300">
-            <div className="sm:flex ">
+          <div className="py-4 border-b border-slate-300">
+            <div className="flex gap-4 items-start lg:items-center">
               <img src={item.image} alt="logo" className="p-4" />
-
               <div className="space-y-4">
                 <p className="flex justify-between text-blue">
-                  {item.name}
-                  <img
-                    src={saveIcon}
-                    alt="bookmark"
-                    className="absolute right-6 h-12 w-12 rounded-full bg-gray/10 p-4 "
-                  />
+                  {item.name}             
                 </p>
                 <Link to={`/job/${item.id}`}>
                   <p className="font-bold hover:text-blue ">{item.position}</p>
                 </Link>
-                <div className="space-x-4 space-y-4 sm:flex sm:space-y-0">
+
+                <div className="flex flex-col sm:flex-row gap-4">
                   <div className="flex space-x-2">
                     <IoLocationOutline size={20} />
                     <span>{item.location}</span>
@@ -39,9 +36,10 @@ const JobsCardTwoA = () => {
                     <span>{item.date}</span>
                   </div>
                 </div>
+
               </div>
             </div>
-            <div className="space-x-4 py-4 sm:flex ">
+            <div className="flex  gap-4 items-center">
               { item.fullTime &&
                 <div className="rounded-full bg-blue/20 px-3 py-1 text-blue">
                   Full Time
@@ -69,7 +67,7 @@ const JobsCardTwoA = () => {
               }
             </div>
           </div>
-          <div className="space-y-2 sm:flex  sm:justify-between">
+          <div className="flex justify-between gap-3 flex-col sm:flex-row mt-4 lg:items-center">
             <div className="mt-3 flex ">
               <CiDollar size={20} className="mt-1" />
               {item.maxPrice} - {item.minPrice}
@@ -86,4 +84,4 @@ const JobsCardTwoA = () => {
   );
 };
 
-export default JobsCardTwoA;
+export default JobCard;

@@ -17,6 +17,7 @@ export default {
         "hero" : "url('/src/assets/images/hero-bg.jpg')",
         "about" : "url('/src/assets/images/about-bg.jpg')",
         "download" : "url('/src/assets/images/phones.jpg')",
+        "detail":  "url('/src/assets/images/detail.png')",
       }
     },
   },
