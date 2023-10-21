@@ -1,4 +1,3 @@
-import React from 'react';
 import { logo } from '../../assets/index';
 import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { FaLinkedinIn, FaFacebookF } from 'react-icons/fa';
@@ -9,9 +8,12 @@ const transition = 'transition-all ease-in-out duration-500';
 const Footer = () => {
   return (
     <footer className="mx-[5%] mt-[50px] w-[90%] pt-10 lg:mx-[10%] lg:w-[80%]">
-      <section className="mb-8 flex gap-8 flex-wrap lg:flex-nowrap">
-
-        <article className="w-full sm:w-2/4 lg:w-1/4" data-aos="fade-right" data-aos-duration="2000">
+      <section className="mb-8 flex flex-wrap gap-8 lg:flex-nowrap">
+        <article
+          className="w-full sm:w-2/4 lg:w-1/4"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <img src={logo} alt="logo" className="w-[100px] sm:w-[180px]" />
           <p className="my-6 text-lg font-semibold text-gray">
             It is a long esta fact that a reader wil dist by the real cont of a
@@ -44,7 +46,11 @@ const Footer = () => {
           </div>
         </article>
 
-        <article className=" w-full sm:w-2/4 lg:w-1/4" data-aos="fade-left" data-aos-duration="2000">
+        <article
+          className=" w-full sm:w-2/4 lg:w-1/4"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <h3 className="text-xl font-bold">Main Pages</h3>
           <Link to="/">
             <p
@@ -90,7 +96,11 @@ const Footer = () => {
           </Link>
         </article>
 
-        <article className="w-full sm:w-2/4 lg:w-1/4" data-aos="fade-right" data-aos-duration="2000">
+        <article
+          className="w-full sm:w-2/4 lg:w-1/4"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <h3 className="text-xl font-bold">Quick Links</h3>
           <Link to="/signup">
             <p
@@ -136,7 +146,11 @@ const Footer = () => {
           </Link>
         </article>
 
-        <article className="w-full sm:w-2/4 lg:w-1/4" data-aos="fade-left" data-aos-duration="2000">
+        <article
+          className="w-full sm:w-2/4 lg:w-1/4"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <h3 className="text-xl font-bold">Contact Info</h3>
           <p className="my-1 text-lg font-semibold text-gray">
             Phone:+00 123 456 789
@@ -165,7 +179,11 @@ const Footer = () => {
         </article>
       </section>
       <hr className="border border-gray/30" />
-      <p className="my-6 text-center text-sm font-semibold text-black/80 sm:text-xl" data-aos="zoom-in" data-aos-duration="2000">
+      <p
+        className="my-6 text-center text-sm font-semibold text-black/80 sm:text-xl"
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
         Copyright © Careari - Design by
         <Link to="https://webflow.com/?r=0" className="hover:text-blue">
           {' '}

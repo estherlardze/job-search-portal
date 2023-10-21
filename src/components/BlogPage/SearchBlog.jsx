@@ -31,13 +31,13 @@ const SearchBlog = () => {
   return (
     <>
       <div
-        className={`flex justify-around lg:justify-between ${
+        className={`flex  flex-col justify-around lg:flex-row lg:justify-between ${
           window.location.pathname === '/blogs' ? 'bg-slate-200' : 'bg-white'
         }  bg-slate-200 px-4 pb-16 pt-20 lg:px-14`}
         data-aos="fade-up"
       >
         <h1 className="text-5xl  font-semibold ">
-          Browse our articles & <br /> resources
+          Browse our articles & <br className="hidden lg:block" /> resources
         </h1>
         <div className=" my-[0.99rem] flex   items-center justify-between rounded-3xl border-[1px]   border-blue">
           <input

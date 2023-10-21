@@ -9,7 +9,9 @@ function AccordionItem({ title, content, isOpen, onClick }) {
       <div className="cursor-pointer" onClick={onClick}>
         <div
           className={`mb-8 flex justify-between ${
-            title.heading ? '' : 'mb-[-1rem] pb-8 pt-5'
+            title.heading
+              ? ''
+              : 'mb-[-1rem] pb-8 pt-5 tracking-tighter xl:tracking-wide'
           } `}
         >
           <div>
