@@ -7,13 +7,11 @@ import { BsArrowRightShort } from 'react-icons/bs';
 const transition = 'transition-all ease-in-out duration-500';
 const Footer = () => {
   return (
-    <footer className="mx-[5%] mt-[50px] w-[90%] pt-10 lg:mx-[10%] lg:w-[80%]">
-      <section className="mb-8 flex flex-wrap gap-8 lg:flex-nowrap">
-        <article
-          className="w-full sm:w-2/4 lg:w-1/4"
-          data-aos="fade-right"
-          data-aos-duration="2000"
-        >
+    <footer className="bg-blue/5">
+      <div className='mx-[5%] mt-[50px] w-[90%] pt-10 lg:mx-[10%] lg:w-[80%]'>
+      <section className="mb-8 flex gap-8 flex-wrap lg:flex-nowrap">
+
+        <article className="w-full sm:w-2/4 lg:w-1/4" data-aos="fade-right" data-aos-duration="2000">
           <img src={logo} alt="logo" className="w-[100px] sm:w-[180px]" />
           <p className="my-6 text-lg font-semibold text-gray">
             It is a long esta fact that a reader wil dist by the real cont of a
@@ -191,6 +189,7 @@ const Footer = () => {
         </Link>
         - Powered by Webflow.
       </p>
+      </div>
     </footer>
   );
 };

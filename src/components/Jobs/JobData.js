@@ -100,7 +100,7 @@ export const companyDetails =[
  export const companyData = [
   {
     id: 1,
-    image: "image",
+    image: project,
     name: 'Rockstar Games New York',
     position: 'Online English Teachers',
     location: 'Las Vegas, USA',
@@ -200,7 +200,7 @@ export const companyDetails =[
   },
   {
     id: 6,
-    image: 'image',
+    image: uiux,
     name: 'Rockstar Games New York',
     position: 'SEO Analyst & Reviewer',
     location: 'Las Vegas, USA',
@@ -220,7 +220,7 @@ export const companyDetails =[
   },
   {
     id: 7,
-    image: 'image',
+    image: project,
     name: 'Rockstar Games New York',
     position: 'Content Writer and Speaker',
     location: 'Las Vegas, USA',
