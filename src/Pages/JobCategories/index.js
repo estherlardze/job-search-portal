@@ -5,4 +5,4 @@ export { default as HealthAndFitness } from './HealthAndFitness';
 export { default as Marketing } from './Marketing';
 export { default as Photography } from './Photography';
 export { default as TeachingAndStudy } from './TeachingAndStady'
-export { default as ItManagement } from './itManagement';
+export { default as ItManagement } from './ItManagement';
