@@ -66,4 +66,9 @@ export { default as webflow } from './images/webflow.svg';
 export { default as calender } from './images/calender-icon.svg';
 export { default as arrow } from './images/arrows.svg';
 export { default as networkEngineer } from './images/networkEngineer.svg';
+export { default as padlock } from './images/padlock.svg';
+export { default as d1 } from './images/detail-bg.svg';
+export { default as d2 } from './images/detaillbg.png';
+export { default as blog10 } from './images/blog10.jpg';
+
 
