@@ -1,12 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './index.css'
 import { About, Blog, BlogDetail, Contact, Home, Jobs, JobCategorie, JobDetail, JobPost, SignUp,
    License, Password, Changelog} from './Pages/index'
 import Error from './components/Error'
 import StyleGuide from './components/StlyleGuide'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <Router>
