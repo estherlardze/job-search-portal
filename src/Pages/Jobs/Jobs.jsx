@@ -14,9 +14,9 @@ const Jobs = () => {
     setSelectedOption(e.target.value);
   };
   return (
-    <>
+    <div className='w-[100%] overflow-hidden'>
     <Navbar/>
-    <div className="w-[100%] overflow-hidden">
+    <div>
 
       <div className="bg-blue/5 ">
         <div className="space-y-20 py-20">
@@ -27,11 +27,11 @@ const Jobs = () => {
           <FindJob />
         </div>
       </div>
-      <div className="lg:flex px-[10%]">
-        <div className="lg:w-1/2  ">
+      <div className="grid grid-cols-5 gap-8 w-[94%] mx-[3%] lg:w-[80%] lg:mx-[10%] my-10">
+        <div className="col-span-5 lg:col-span-3">
           <JobsCardTwo />
         </div>
-        <div className="mx-1 space-y-20 lg:w-1/2">
+        <div className="col-span-5 lg:col-span-2">
           <JobsCardOne title="email me job">
             <select
               value={selectedOption}
@@ -74,17 +74,19 @@ const Jobs = () => {
              <HiOutlineArrowSmallRight size={25} />
             </button>
           </JobsCardOne>
-
+            
+          <div className='mt-8'>
           <JobsCardOne title="featured companies">
             <JobCompaniesCard/>
           </JobsCardOne>
+          </div>
         </div>
       </div> 
 
  <StartJourneyJob/>
     </div>
 <Footer/>
-    </>
+    </div>
   );
 };
 
