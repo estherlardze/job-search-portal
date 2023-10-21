@@ -1,5 +1,63 @@
  import {database ,uiux,project,aijob, } from "../../assets"
- 
+
+export const companyDetails =[
+  {
+    image: uiux,
+    name : "Google LLC."
+  },
+  {
+    image: database,
+    name :  "Facebook"
+  },
+  {
+    image: uiux,
+    name :  "Toutube"
+  },
+]
+
+
+ export const perPage =[
+  {
+    id: 1 ,
+    item: "10 Per Page",
+    val: 10
+  },
+  {
+    id: 2 ,
+    item: "20 Per Page",
+    val: 20
+  },
+  {
+    id: 3 ,
+    item: "30 Per Page",
+    val: 30
+  },
+  {
+    id: 4 ,
+    item: "40 Per Page",
+    val: 40
+  },
+ ]
+ export const shortBy =[
+{
+  id:1,
+  item: "Short By (Default)"
+},
+{
+  id:2,
+  item: "Short By (Date)"
+},
+{
+  id:3,
+  item: "Short By (Salary)"
+},
+{
+  id:4,
+  item: "Short By (Remote)"
+},
+ ]
+
+
  export const cartData = [
     {
       id: "0",

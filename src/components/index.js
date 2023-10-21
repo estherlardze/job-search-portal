@@ -21,3 +21,4 @@ export { default as BlogPage } from './BlogPage/BlogPage';
 export { default as SearchBlog } from './BlogPage/SearchBlog';
 export {default as JobCartDropDown} from './Jobs/JobCartDropDown';
 export {default as JobCardTwoA} from './Jobs/JobCardTwoA';
+export { default as StartJourneyJob} from './Jobs/StartJourneyJob'

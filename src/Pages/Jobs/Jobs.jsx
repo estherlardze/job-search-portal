@@ -1,20 +1,23 @@
 import { useState } from 'react';
 
-import { FindJob, JobsCardOne, JobsCardTwo } from '../../components';
+import { FindJob, JobsCardOne, JobsCardTwo,StartJourneyJob } from '../../components';
+import JobCompaniesCard from '../../components/Jobs/JobCompaniesCard';
 
 import { cartData } from '../../components/Jobs/JobData';
+import { Navbar,Footer } from "../../components";
 
 const Jobs = () => {
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState('none');
 
   const handleSelectChange = (e) => {
     setSelectedOption(e.target.value);
   };
   return (
     <>
+    <Navbar/>
       <div className="bg-blue/5">
         <div className="space-y-20 py-20">
-          <h2 className="text-4xl font-semibold capitalize sm:text-7xl ">
+          <h2 className="text-4xl font-bold capitalize sm:text-7xl ">
             Search Your Demanded Job <br />
             Permanent & Remote
           </h2>
@@ -63,14 +66,20 @@ const Jobs = () => {
               <input type="radio" name="time" id="t4 " />
               <label htmlFor="#t4">Annually</label>
             </div>
-            <button className="w-full rounded-full  border  border-blue px-3 py-4 font-semibold capitalize text-blue transition-all duration-500 ease-in-out">
-              Create Alert --&gt;
+            <button className="w-full rounded-full  border  border-blue px-3 py-4 font-semibold capitalize text-blue transition-all duration-500 ease-in-out text-center ">
+              Create Alert 
+              <img src="" alt="a"/>
             </button>
           </JobsCardOne>
 
-          <JobsCardOne title="featured companies"></JobsCardOne>
+          <JobsCardOne title="featured companies">
+            <JobCompaniesCard/>
+          </JobsCardOne>
         </div>
       </div>
+
+<StartJourneyJob/>
+<Footer/>
     </>
   );
 };
