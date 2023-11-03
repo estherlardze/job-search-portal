@@ -1,8 +1,25 @@
-# React + Vite
+<h1>Careari</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br >
+<img src="home.png" width="100%" alt="landing page" />
+<hr >
 
-Currently, two official plugins are available:
+<h4>Description</h4>
+A job search portal where you can search for a job based on categories
+<br >
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h4>Installation Guide</h4>
+You need to have node installed
+
+
+Start by cloning the repo:
+
+```
+https://github.com/estherlardze/job-search-portal.git
+cd job-search-portal
+npm install
+npm run dev
+```
+
+select the link running on your development server to preview<br>
+the application
