@@ -171,7 +171,7 @@ const Footer = () => {
             />
             <BsArrowRightShort
               size={50}
-              className={`${transition} rounded-sm bg-blue px-2 text-white hover:bg-black`}
+              className={`${transition} rounded-r-sm bg-blue px-2 text-white hover:bg-black -ml-[1px]`}
             />
           </div>
         </article>
