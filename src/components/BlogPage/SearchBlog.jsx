@@ -39,14 +39,14 @@ const SearchBlog = () => {
         <h1 className="text-5xl  font-semibold ">
           Browse our articles & <br className="hidden lg:block" /> resources
         </h1>
-        <div className=" my-[0.99rem] flex   items-center justify-between rounded-3xl border-[1px]   border-blue">
+        <div className=" my-[0.99rem] flex items-center justify-between">
           <input
             placeholder="Search Blog & Articles"
-            className={`ml-4  bg-slate-200 ${
+            className={`bg-slate-200 rounded-3xl border-[1px] border-blue h-full w-full p-4 ${
               window.location.pathname === '/blogs'
                 ? 'bg-slate-200'
                 : 'bg-white'
-            } py-2 focus:outline-none `}
+            } focus:outline-none `}
           />
           {window.location.pathname === '/blogs' && <CiSearch size={22} />}
         </div>{' '}
